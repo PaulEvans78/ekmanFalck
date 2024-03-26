@@ -51,16 +51,16 @@
     {   
         "id":"3",
         "mainPic": "placeholder.png",
-        "headline": "Grandiosa",
-        "description": "As a UX/UI designer, my passion lies in crafting seamless digital experiences. With a solid background in frontend development, I transform concepts into interactive realities.",
-        "cta": "See film.",
+        "headline": "Fredrik Falck",
+        "description": "Director.",
+        "cta": "See Fredriks films.",
         "buttonLink": "/Design"
     },
     {
         "id":"4",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
-        "description": "As an experienced cinematographer, I am driven by the power of storytelling through light, composition, and motion. Crafting cinematic experiences that resonate profoundly.",
+        "description": "Director.",
         "cta": "See film.",
         "buttonLink": "https://www.paulevans-dop.com"
     },
@@ -68,7 +68,7 @@
         "id":"17",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
-        "description": "As an experienced cinematographer, I am driven by the power of storytelling through light, composition, and motion. Crafting cinematic experiences that resonate profoundly.",
+        "description": "Director.",
         "cta": "See film.",
         "buttonLink": "https://www.paulevans-dop.com"
     },
@@ -76,7 +76,7 @@
         "id":"18",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
-        "description": "As an experienced cinematographer, I am driven by the power of storytelling through light, composition, and motion. Crafting cinematic experiences that resonate profoundly.",
+        "description": "Director.",
         "cta": "See film.",
         "buttonLink": "https://www.paulevans-dop.com"
     }

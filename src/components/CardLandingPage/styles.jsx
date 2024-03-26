@@ -128,9 +128,10 @@ export const StyledHeader = styled.h3`
 export const StyledCardp = styled.p`
     color: #000000;
     font-size: 18px;
+    font-weight: 600;
     margin-left: 1.75em;
     margin-right: 1em;
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
     text-align: left;
 
     @media screen and (max-width: 960px) {
