@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-// import logoWhite_large from '../assets/logoWhite_large.png';
 import { Spin as Hamburger } from 'hamburger-react'
 import { Link, useLocation } from "react-router-dom";
 
@@ -11,22 +10,12 @@ const StyledNav = styled.nav`
     min-width: 100vw;
     overflow-x: hidden;
     overflow-y: hidden;
-    /* position: absolute; */
     z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* justify-items: flex-end; */
-    /* align-content: flex-end; */
-    /* padding-left: 2em; */
     padding-bottom: 1em;
     background-color: whitesmoke;
-    /* margin-top: 0.5em; */
-    /* font-family: 'Neue Haas Grotesk Display Pro', sans-serif;  */
-    /* font-size: 16px;
-    line-height: 60px;
-    color: whitesmoke;  */
-    /* background-color: #d60909; */
 
     position: fixed;
     top: ${({ visible }) => (visible ? '0' : '-120px')}; /* Adjust according to your navbar height */
@@ -34,17 +23,13 @@ const StyledNav = styled.nav`
 
     @media screen and (max-width: 960px) {
         font-size: 14px;
-        
     }
 
     @media screen and (max-width: 767px) {
-        /* background-color: #171717; */
-        /* position: relative; */
         justify-items: flex-end;
         justify-content: space-between;
         margin-top: 0;
         padding-top: 0.5em;
-        /* height: 80px; */
   }
 
     `;
