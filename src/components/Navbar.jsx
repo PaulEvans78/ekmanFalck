@@ -20,12 +20,17 @@ const StyledNav = styled.nav`
     /* align-content: flex-end; */
     /* padding-left: 2em; */
     padding-bottom: 1em;
+    background-color: whitesmoke;
     /* margin-top: 0.5em; */
     /* font-family: 'Neue Haas Grotesk Display Pro', sans-serif;  */
     /* font-size: 16px;
     line-height: 60px;
     color: whitesmoke;  */
     /* background-color: #d60909; */
+
+    position: fixed;
+    top: ${({ visible }) => (visible ? '0' : '-120px')}; /* Adjust according to your navbar height */
+    transition: top 0.3s;
 
     @media screen and (max-width: 960px) {
         font-size: 14px;
@@ -277,11 +282,24 @@ const Navbar = () => {
     const [open, setOpen] = useState(false); // Hamburger menu
     const [activePage, setActivePage] = useState(location.pathname);
     const [hamburgerActive, setHamburgerActive] = useState(false); // Hamburger menu
+    const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+    const [visible, setVisible] = useState(true);
 
     useEffect(() => {
         setActivePage(location.pathname);
-    }, [location]);
 
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [location.pathname, prevScrollPos]);
+
+    
 const links = [
     
     {
@@ -323,7 +341,7 @@ const links = [
 
     return (
         
-        <StyledNav > 
+        <StyledNav visible={visible}> 
 
             <StyledImageandName>
                 <Link to="/">
@@ -364,6 +382,6 @@ const links = [
         
 
     );
-}
 
+                }
 export default Navbar;
