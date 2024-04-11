@@ -6,20 +6,25 @@ import { Link, useLocation } from "react-router-dom";
 
 const StyledNav = styled.nav`
     grid-area: top;
-    max-width: 100vw;
-    min-width: 100vw;
+    width: 80%;
+    /* max-width: 100vw; */
+    /* min-width: 100vw; */
     overflow-x: hidden;
     overflow-y: hidden;
     z-index: 100;
     display: flex;
+    /* align-self: center; */
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    /* column-gap: 14em; */
+    /* margin-left: 6em;  */
+    /* margin-right: 6em; */
     padding-bottom: 1em;
     background-color: whitesmoke;
 
     position: fixed;
     top: ${({ visible }) => (visible ? '0' : '-120px')}; /* Adjust according to your navbar height */
-    transition: top 0.3s;
+    transition: top 0.6s;
 
     @media screen and (max-width: 960px) {
         font-size: 14px;
@@ -35,15 +40,15 @@ const StyledNav = styled.nav`
     `;
 
 const StyledImageandName = styled.div `
-        width: 50%;
+        width: 180px;
         height: 100%;
 
     @media screen and (max-width: 960px) {
-        width: 60%;
+        /* width: 60%; */
   }
 
     @media screen and (max-width: 355px) {
-        width: 80%; 
+        /* width: 80%;  */
   }
 `;
 
@@ -78,10 +83,11 @@ const StyledImageandName = styled.div `
 
 const StyledIdent = styled.div `
     float: left;
-    width: 180px; 
+    width: 200px; 
     height: 100%; 
-    padding-left: 2em;
+    padding-left: 0.5em;
     text-align: left;
+    /* background-color: red; */
 
     /* &:hover{
         border-bottom: 1px solid white;
@@ -92,7 +98,7 @@ const StyledIdent = styled.div `
     } */
 
     @media screen and (max-width: 767px) {
-        width: 110px; 
+        /* width: 110px;  */
     }
 
     /* @media screen and (max-width: 355px) {
@@ -107,6 +113,7 @@ const StyledName = styled.h1 `
     font-size: 52px;
     line-height: 50px;
     letter-spacing: 0em;
+    font-weight: bold;
     color: #000000;
     margin-bottom: 0;
     margin-top: 0.5em;

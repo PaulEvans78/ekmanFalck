@@ -35,8 +35,8 @@ grid-template-areas:
 /* min-width: 100%; */
 /* overflow-x: hidden; */
     /* overflow-y: hidden; */
-/* padding-left: 4em;
-padding-right: 4em; */
+/* padding-left: 4em; */
+/* padding-right: 4em; */
 /* background-color: #b67f10; */
 `;
 

@@ -79,6 +79,22 @@
         "description": "Director.",
         "cta": "See film.",
         "buttonLink": "https://www.paulevans-dop.com"
+    },
+    {
+        "id":"19",
+        "mainPic": "placeholder.png",
+        "headline": "Grandiosa",
+        "description": "Director.",
+        "cta": "See film.",
+        "buttonLink": "https://www.paulevans-dop.com"
+    },
+    {
+        "id":"20",
+        "mainPic": "placeholder.png",
+        "headline": "Grandiosa",
+        "description": "Director.",
+        "cta": "See film.",
+        "buttonLink": "https://www.paulevans-dop.com"
     }
 ],
 

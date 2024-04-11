@@ -13,7 +13,7 @@ justify-content: center;
 gap: 1em;
 flex-wrap: wrap;
 padding-top: 6em;
-padding-bottom: 6em;
+padding-bottom: 4em;
   /* grid-area: main;
   display: flex;
   flex-direction: row;

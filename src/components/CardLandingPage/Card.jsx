@@ -23,7 +23,7 @@ function Card (props) {
                             
                                     <a href={props.buttonLink}><StyledButton>
                                         <StyledHeader>{props.headline}</StyledHeader>
-                                {/* <StyledCardp>{props.description}</StyledCardp> */}
+                                <StyledCardp>{props.description}</StyledCardp>
                                 <StyledCardp>{props.cta}</StyledCardp>
                                 </StyledButton></a>
 

@@ -115,6 +115,7 @@ export const StyledHeader = styled.h3`
     color: #000000;
     font-size: 32px;
     font-weight: 900;
+    /* line-height: 1em; */
 
     @media screen and (max-width: 960px) {
         font-size: 28px;
@@ -133,6 +134,7 @@ export const StyledCardp = styled.p`
     margin-right: 1em;
     /* margin-bottom: 1.5em; */
     text-align: left;
+    line-height: 0.25em;
 
     @media screen and (max-width: 960px) {
         font-size: 16px;
