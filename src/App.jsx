@@ -25,12 +25,12 @@ min-height: 100%;
 max-width: 100vw;
 display: grid;
 grid-template-rows: 7rem repeat(2, 1fr) 7rem;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(3, 1fr);
 grid-template-areas:
-"top top"
-"main main"
-"main main"
-"footer footer";
+"top top top"
+"main main main"
+"main main main"
+"footer footer footer";
 
 /* min-width: 100%; */
 /* overflow-x: hidden; */

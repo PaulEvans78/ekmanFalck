@@ -1,50 +1,55 @@
 import React from "react";
 import styled from "styled-components";
-import { FaImdb, FaInstagram, FaLinkedin  } from 'react-icons/fa';
+// import { FaImdb, FaInstagram, FaLinkedin  } from 'react-icons/fa';
 import { IconContext } from "react-icons";
 
 
-const footerData = [
-  {
-      id: 1,
-      href: "https://www.linkedin.com/in/tobias-reiner-64885645/",
-      icon: <FaLinkedin />,
-      des: "LinkedIn"
-  },
-  {
-      id: 2,
-      href: "https://www.instagram.com/1st_ad_tobias/",
-      icon: <FaInstagram />,
-      des: "Instagram"
-  },
-  {
-      id: 3,
-      href: "https://www.imdb.com/name/nm1639113/?ref_=fn_al_nm_1",
-      icon: <FaImdb />,
-      des: "Imdb"
-  },
+// const footerData = [
+//   {
+//       id: 1,
+//       href: "https://www.linkedin.com/in/tobias-reiner-64885645/",
+//       icon: <FaLinkedin />,
+//       des: "LinkedIn"
+//   },
+//   {
+//       id: 2,
+//       href: "https://www.instagram.com/1st_ad_tobias/",
+//       icon: <FaInstagram />,
+//       des: "Instagram"
+//   },
+//   {
+//       id: 3,
+//       href: "https://www.imdb.com/name/nm1639113/?ref_=fn_al_nm_1",
+//       icon: <FaImdb />,
+//       des: "Imdb"
+//   },
   
-];
+// ];
 
 const StyledFooter = styled.footer`
   grid-area: footer;
   /* background-image: linear-gradient(rgba(255,0,0,0), #171717); */
-  /* background-color: red; */
-  max-width: 100vw;
-  min-width: 100vw;
+  background-color: #40cf00;
+  /* max-width: 100vw;
+  min-width: 100vw; */
+  width: 100%;
+  /* max-width: 100%; */
   z-index: 100;
   /* position: absolute; */
   /* position: fixed; */
   bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  column-gap: 6em;
   justify-items: center;
   align-items: flex-end;
   /* font-family: 'Lexend'; */
   font-size: 14px;
   line-height: 24px;
   color: whitesmoke;
+  padding-left: 1em;
+  padding-right: 1em;
 
   @media screen and (max-width: 767px) {
     background-image: none;
@@ -54,11 +59,107 @@ const StyledFooter = styled.footer`
   }
 `;
 
+const StyledImageandName = styled.div `
+        width: 180px;
+        height: 100%;
+        padding-left: 2.5em;
 
+    @media screen and (max-width: 960px) {
+        /* width: 60%; */
+  }
+
+    @media screen and (max-width: 355px) {
+        /* width: 80%;  */
+  }
+`;
+
+// const StyledImgContainer = styled.div `
+//         float: left;
+// `;
+
+// const StyledImg = styled.img`
+//         text-align: center;
+//         width: 65px; 
+//         margin-left: 1em;
+//         margin-right: 1em;
+//         margin-top: 0.75em;
+//         padding-bottom: 0.75em;
+
+   
+
+//     @media screen and (max-width: 960px) {
+//         margin-right: 0.5em;
+//         margin-top: 1em;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//         width: 50px; 
+//         margin-top: 0.5em;
+//   }
+
+//   @media screen and (max-width: 355px) {
+//         display: none;
+//   }
+// `;
+
+const StyledIdent = styled.div `
+    float: left;
+    width: 200px; 
+    height: 100%; 
+    padding-left: 0.5em;
+    text-align: left;
+    /* background-color: red; */
+
+    /* &:hover{
+        border-bottom: 1px solid white;
+    }  */
+
+    /* @media screen and (max-width: 960px) {
+        width: 200px; 
+    } */
+
+    @media screen and (max-width: 767px) {
+        /* width: 110px;  */
+    }
+
+    /* @media screen and (max-width: 355px) {
+        width: 100px; 
+  }  */
+
+`;
+
+const StyledName = styled.h1 `
+   
+    /* font-family: 'Delicious Handrawn', cursive; */
+    font-size: 52px;
+    line-height: 50px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    /* text-shadow: 1px 1px 5px #2f2f2f; */
+
+    @media screen and (max-width: 1030px) {
+        font-size: 48px;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+    @media screen and (max-width: 355px) {
+        margin-left: 0.5em
+  }
+
+    
+    `;
 
 const StyledContactContainer = styled.div`
   display: flex;
   flex-direction: column;
+  /* justify-self: flex-end; */
 
   @media screen and (max-width: 767px) {
         text-align: center;
@@ -122,90 +223,127 @@ const StyledTelLink = styled.p`
 `;
 
 
-const IconContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-items:center;
-  margin-right: 2em;
+// const IconContainer = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   justify-items:center;
+//   margin-right: 2em;
 
-  @media screen and (max-width: 960px) {
-        /* margin-right: 2em; */
+//   @media screen and (max-width: 960px) {
+//         /* margin-right: 2em; */
 
-    }
+//     }
 
     
 
-@media screen and (max-width: 767px) {
-  margin-right: 1em;
-}
-`;
+// @media screen and (max-width: 767px) {
+//   margin-right: 1em;
+// }
+// `;
 
 
-const StyledIcon = styled.a`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1em 1em 0em 2em;
-  
-  &:hover{
-        text-decoration: underline;
-    }
-
-    @media screen and (max-width: 767px) {
-    margin: 0em 2em 0em 2em;
-
-    &:hover{
-        text-decoration: none;
-    }
-    
-  }
-`;
-
-const IconDes = styled.p`
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  font-family: 'Lexend';
-  font-size: 12px;
-  line-height: 24px;
-  color: #000000;
-  text-align: center;
-  margin-top: 0.5em;
-`;
-
-// const StyledCopyRightContainer = styled.div`
+// const StyledIcon = styled.a`
 //   display: flex;
 //   flex-direction: column;
-//   text-align: right;
-//   /* margin-right: 1em; */
-//   margin-bottom: 1em;
-
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//     flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 1em 1em 0em 2em;
+  
+//   &:hover{
+//         text-decoration: underline;
 //     }
+
+//     @media screen and (max-width: 767px) {
+//     margin: 0em 2em 0em 2em;
+
+//     &:hover{
+//         text-decoration: none;
+//     }
+    
+//   }
 // `;
 
-// const StyledCopyRight = styled.div`
-//   line-height: 26px;
+// const IconDes = styled.p`
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
 //   font-family: 'Lexend';
-//   color: whitesmoke;
-//   text-shadow: 2px 2px 4px black;
-
-//   @media screen and (max-width: 767px) {
-//     font-size: 8px;
-//     margin-left: 1em;
-//     margin-right: 1em;
-//     margin-top: 2em;
-//     }
+//   font-size: 12px;
+//   line-height: 24px;
+//   color: #000000;
+//   text-align: center;
+//   margin-top: 0.5em;
 // `;
+
+const StyledCopyRightContainer = styled.div`
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  /* margin-right: 1em; */
+  margin-bottom: 1em;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    flex-direction: row;
+    }
+`;
+
+const StyledCopyRight = styled.div`
+  line-height: 26px;
+  /* font-family: 'Lexend'; */
+  color: #000000;
+  /* text-shadow: 2px 2px 4px black; */
+
+  @media screen and (max-width: 767px) {
+    font-size: 8px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    }
+`;
 
 const Footer = () => {
     return (
       
         <StyledFooter>
+
+<StyledImageandName>
+                {/* <Link to="/"> */}
+                  
+                    {/* <StyledImgContainer>
+                        <StyledImg src={logoWhite_large} alt="Ekman & Falck" onClick={() => {setOpen(false);}} />
+                    </StyledImgContainer> */}
+
+                    <StyledIdent>
+                        <StyledName>Ekman
+                                    &Falck</StyledName>
+                        {/* <StyledTitle>1st Assistant Director</StyledTitle> */}
+                    </StyledIdent>
+                    
+                   
+
+                        
+
+                {/* </Link>   */}
+            </StyledImageandName>      
+
+            <StyledCopyRightContainer>
+
+<StyledCopyRight>Copyright 2024</StyledCopyRight>
+    {/* <StyledCopyRight>Paul Evans</StyledCopyRight> */}
+    {/* <StyledCopyRight>Creative</StyledCopyRight> */}
+
+</StyledCopyRightContainer>
+
+          <StyledContactContainer>
+
+            <Styledp>Ekman & Falck</Styledp>
+            <StyledMailLink><a href="mailto:mail@FirstAD.se">mail@FirstAD.se</a></StyledMailLink> 
+            <StyledTelLink><a href="tel:+46739813969">+46739813969</a></StyledTelLink>
+
+          </StyledContactContainer>
 
           <StyledContactContainer>
 
@@ -216,16 +354,12 @@ const Footer = () => {
           </StyledContactContainer>
 
         
-              {/* <Icons /> */}
+              
 
-          {/* <StyledCopyRightContainer> */}
-          <Icons />
+          
+          {/* <Icons /> */}
 
-              {/* <StyledCopyRight>Copyright 2023</StyledCopyRight>
-              <StyledCopyRight>Paul Evans</StyledCopyRight>
-              <StyledCopyRight>Creative</StyledCopyRight> */}
-
-          {/* </StyledCopyRightContainer> */}
+   
 
         </StyledFooter>
 
@@ -233,24 +367,24 @@ const Footer = () => {
     );
 }
 
-const Icons = () => {
+// const Icons = () => {
   
-  return (
-    <IconContainer> 
+//   return (
+//     <IconContainer> 
 
-      <IconContext.Provider value={{ size: "2em"}}>
-        {footerData.map(Link => (
-          <StyledIcon href={Link.href} key={Link.id}>
-            {Link.icon}
+//       <IconContext.Provider value={{ size: "2em"}}>
+//         {footerData.map(Link => (
+//           <StyledIcon href={Link.href} key={Link.id}>
+//             {Link.icon}
           
-            <IconDes>{Link.des}</IconDes>
-        </StyledIcon>))}
+//             <IconDes>{Link.des}</IconDes>
+//         </StyledIcon>))}
         
-          </IconContext.Provider>
+//           </IconContext.Provider>
 
-    </IconContainer>
-  );
-}
+//     </IconContainer>
+//   );
+// }
 
  
 

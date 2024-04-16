@@ -3,16 +3,16 @@ import axios from 'axios';
 import Card from '../Card';
 
 
-const Skills = () => {
-    const [skillsData, setSkillsData] = useState([])
+const Contents = () => {
+    const [contentData, setContentsData] = useState([])
     
 
     useEffect(() => {
         const fetchData = async () => {
             const result = await axios(
-                'skills.json',
+                'contents.json',
             );
-            setSkillsData(result.data.landingpage);
+            setContentsData(result.data.landingpage);
         };
         fetchData();
 
@@ -21,10 +21,10 @@ const Skills = () => {
 
     return (
         <>
-            {skillsData.map(skill => <Card key={skill.id} {...skill} />)}
+            {contentData.map(content => <Card key={content.id} {...content} />)}
         </>
 
     )
 }
 
-export default Skills;
+export default Contents;

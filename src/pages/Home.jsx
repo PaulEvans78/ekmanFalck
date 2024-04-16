@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Skills from '../components/CardLandingPage/skills';
+import Contents from '../components/CardLandingPage/contents';
 // import { Fade } from "react-awesome-reveal";
 
 const StyledHomeContainer = styled.div`
@@ -10,9 +10,9 @@ grid-area: main;
 flex-direction: row;
 justify-items: center;
 justify-content: center;
-gap: 1em;
+gap: 0.5em;
 flex-wrap: wrap;
-padding-top: 6em;
+padding-top: 2em;
 padding-bottom: 4em;
   /* grid-area: main;
   display: flex;
@@ -36,7 +36,7 @@ const Home = () => {
     
      <StyledHomeContainer>
 
-        <Skills />
+        <Contents />
 
             {/* <Fade><ImgSlider /></Fade> */}
 

@@ -21,6 +21,7 @@ const StyledNav = styled.nav`
     /* margin-right: 6em; */
     padding-bottom: 1em;
     padding-left: 1em;
+    padding-right: 1em;
     background-color: whitesmoke;
 
     position: fixed;
@@ -43,6 +44,7 @@ const StyledNav = styled.nav`
 const StyledImageandName = styled.div `
         width: 180px;
         height: 100%;
+        padding-left: 1.5em;
 
     @media screen and (max-width: 960px) {
         /* width: 60%; */
@@ -159,11 +161,13 @@ const StyledName = styled.h1 `
 const StyledNavul = styled.ul`
     width: auto;
     display: flex;
+    /* align-self: flex-end; */
     /* justify-content: flex-end;  */
-    /* justify-items: flex-end; */
+    /* align-items: flex-end; */
     list-style-type: none;
-    margin-right: 2em;
+    /* margin-right: 2em; */
     margin-left: 1em;
+    padding-right: 1em;
 
     @media screen and (max-width: 767px) {
         position: fixed;

@@ -8,10 +8,10 @@ export const StyledFrontCard = styled.div`
     align-items: center;
     /* margin-top: 3em;  */
     /* margin-bottom: 2em; */
-    width: 40%;
+    width: 30%;
     min-width: 0%;
     aspect-ratio: 4 / 3;
-    background-color: #29c629;
+    background-color: #40cf00;
     /* font-family: 'Poppins'; */
     font-size: 1.2rem;
     overflow: hidden;
@@ -30,6 +30,7 @@ export const StyledFrontCard = styled.div`
 
 @media screen and (max-width: 960px) {
     margin-top: 2em; 
+    width: 40%;
     
     @keyframes slidedown {
   0%   {bottom:-1000px;}
@@ -80,7 +81,7 @@ export const StyledInfoContainer = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #05f3059e;
+    background-color: #42cf00b8;
 
     &:hover{
         opacity: 0;
@@ -112,7 +113,7 @@ export const StyledHeader = styled.h3`
     margin-left: 1em;
     margin-right: 1em;
     white-space: pre-wrap;
-    color: #000000;
+    color: #ffffff;
     font-size: 32px;
     font-weight: 900;
     /* line-height: 1em; */
@@ -127,7 +128,7 @@ export const StyledHeader = styled.h3`
 `;
 
 export const StyledCardp = styled.p`
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     margin-left: 1.75em;
