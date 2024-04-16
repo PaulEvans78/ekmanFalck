@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const StyledNav = styled.nav`
     grid-area: top;
-    width: 80%;
+    width: 100%;
     /* max-width: 100vw; */
     /* min-width: 100vw; */
     overflow-x: hidden;
@@ -20,6 +20,7 @@ const StyledNav = styled.nav`
     /* margin-left: 6em;  */
     /* margin-right: 6em; */
     padding-bottom: 1em;
+    padding-left: 1em;
     background-color: whitesmoke;
 
     position: fixed;
@@ -303,32 +304,25 @@ const links = [
     },
     {
         id: 2,
-        to: "/experience",
-        text: "Experience",
+        to: "/filmProduction",
+        text: "Film Production",
         onClick: () => { setOpen(false); },
         isExternal: false
     },
     {
         id: 3,
-        to: "/directors",
-        text: "Directors",
+        to: "/productionService",
+        text: "Production Service",
         onClick: () => { setOpen(false); },
         isExternal: false
     },
     {
         id: 4,
-        to: "/about",
-        text: "About",
+        to: "/aboutUs",
+        text: "About Us",
         onClick: () => { setOpen(false); },
         isExternal: false 
-    },
-    {
-        id:5,
-        text: "Vimeo",
-        href: "https://vimeo.com/tobiasreiner",
-        onClick: () => { setOpen(false); },
-        isExternal: true
-    },
+    }
 ];
 
     return (
@@ -343,7 +337,8 @@ const links = [
                     </StyledImgContainer> */}
 
                     <StyledIdent>
-                        <StyledName>Ekman & Falck</StyledName>
+                        <StyledName>Ekman
+                                    &Falck</StyledName>
                         {/* <StyledTitle>1st Assistant Director</StyledTitle> */}
                     </StyledIdent>
                     
