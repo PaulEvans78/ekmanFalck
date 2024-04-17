@@ -92,9 +92,7 @@ const StyledIdent = styled.div `
     text-align: left;
     /* background-color: red; */
 
-    /* &:hover{
-        border-bottom: 1px solid white;
-    }  */
+   
 
     /* @media screen and (max-width: 960px) {
         width: 200px; 
@@ -121,6 +119,9 @@ const StyledName = styled.h1 `
     margin-bottom: 0;
     margin-top: 0.5em;
     /* text-shadow: 1px 1px 5px #2f2f2f; */
+    &:hover {
+        color: #59cf23;
+    }
 
     @media screen and (max-width: 1030px) {
         font-size: 48px;
@@ -167,7 +168,9 @@ const StyledNavul = styled.ul`
     list-style-type: none;
     /* margin-right: 2em; */
     margin-left: 1em;
-    padding-right: 1em;
+    padding-right: 1.5em;
+
+    
 
     @media screen and (max-width: 767px) {
         position: fixed;
@@ -207,6 +210,7 @@ const StyledLink = styled(Link)`
     
     &:hover{
         text-decoration: underline;
+        color: #59cf23;
     }
     
     &.active {

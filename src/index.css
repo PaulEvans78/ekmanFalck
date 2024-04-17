@@ -1,6 +1,6 @@
 :root {
   font-family: 'Neue Haas Grotesk Display Pro', sans-serif; 
-  font-size: 20px;                                             
+  font-size: 18px;                                             
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,13 +15,13 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 800;
   color: #000000;
   text-decoration: inherit;
 }
-a:hover {
+/* a:hover {
   color: #59cf23;
-}
+} */
 
 body {
   margin: 0;
