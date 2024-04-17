@@ -19,6 +19,8 @@ import {
   Route,
   Switch
 } from "react-router-dom";
+import FilmProduction from "./pages/FilmProduction";
+import ProductionService from "./pages/ProductionService";
 
 const GridContainer = styled.div`
 min-height: 100%;
@@ -71,17 +73,17 @@ function App() {
                       <Home />
                     </Route>
 
-                    {/* <Route path="/directors">
-                      <Directors />
+                    <Route path="/filmProduction">
+                      <FilmProduction />
                     </Route>
 
-                    <Route path="/experience">
-                      <Experience />
+                     <Route path="/productionService">
+                      <ProductionService />
                     </Route>
 
-                    <Route path="/about">
+                    {/* <Route path="/about">
                       <About />
-                    </Route> */}
+                    </Route>  */}
 
                   </Switch>
 
