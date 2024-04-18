@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Contents from '../components/CardLandingPage/contents';
+import Contents from '../components/ProductionService/contents/Contents';
 
 const StyledProductionServiceContainer = styled.div`
 max-width: 100vw;

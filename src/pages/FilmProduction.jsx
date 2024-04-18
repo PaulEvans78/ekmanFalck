@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import Contents from '../components/CardLandingPage/contents';
+import Contents from '../components/FilmProductionCards/contents/Contents';
+import Digest from '../components/FilmDigest/digest/Digest';
 
 const StyledFilmProductionContainer = styled.div`
 max-width: 100vw;
@@ -35,6 +36,7 @@ const FilmProduction = () => {
     
      <StyledFilmProductionContainer >
 
+        <Digest />
         <Contents />
 
     </StyledFilmProductionContainer >

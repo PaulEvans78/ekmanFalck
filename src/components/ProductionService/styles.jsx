@@ -15,13 +15,13 @@ export const StyledFrontCard = styled.div`
     /* font-family: 'Poppins'; */
     font-size: 1.2rem;
     overflow: hidden;
-    animation-name: slidedown;
+    animation-name: slideleft;
     animation-duration: 2s;
     animation-delay: 0s;
 
-    @keyframes slidedown {
-  0%   {top:-1000px;}
-  100% {top:0px;}
+    @keyframes slideleft {
+  0%   {right:-1500px;}
+  100% {right:0px;}
 }
 
 /* &:hover{
