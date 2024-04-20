@@ -326,7 +326,7 @@ const links = [
     },
     {
         id: 4,
-        to: "/aboutUs",
+        to: "/about",
         text: "About Us",
         onClick: () => { setOpen(false); },
         isExternal: false 

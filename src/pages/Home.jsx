@@ -4,9 +4,9 @@ import Contents from '../components/CardLandingPage/contents';
 // import { Fade } from "react-awesome-reveal";
 
 const StyledHomeContainer = styled.div`
+grid-area: main;
 max-width: 100vw;
 display: flex;
-grid-area: main;
 flex-direction: row;
 justify-items: center;
 justify-content: center;

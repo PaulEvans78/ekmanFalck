@@ -3,9 +3,12 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; 
 import Home from "./pages/Home";
+import FilmProduction from "./pages/FilmProduction";
+import ProductionService from "./pages/ProductionService";
+import About from "./pages/About";
 // import Directors from "./pages/Directors";
 // import Experience from "./pages/Experience";
-// import About from "./pages/About";
+
 
 // import {
 
@@ -19,8 +22,7 @@ import {
   Route,
   Switch
 } from "react-router-dom";
-import FilmProduction from "./pages/FilmProduction";
-import ProductionService from "./pages/ProductionService";
+
 
 const GridContainer = styled.div`
 min-height: 100%;
@@ -81,9 +83,9 @@ function App() {
                       <ProductionService />
                     </Route>
 
-                    {/* <Route path="/about">
+                    <Route path="/about">
                       <About />
-                    </Route>  */}
+                    </Route> 
 
                   </Switch>
 

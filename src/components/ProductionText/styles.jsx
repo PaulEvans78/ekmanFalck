@@ -7,7 +7,7 @@ export const StyledFrontCard = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 0em 3em 0em 3em;
-    padding: 2em 2em 0em 2em;
+    padding: 1em 2em 0em 2em;
     /* margin-top: 3em;  */
     /* margin-bottom: 2em; */
     width: 100vw;
@@ -94,8 +94,8 @@ export const StyledInfoContainer = styled.div`
 export const StyledCardp = styled.p`
     /* position: absolute; */
     color: #000000;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
     margin-left: 4em;
     margin-right: 4em;
     /* margin-bottom: 1.5em; */
