@@ -6,6 +6,7 @@ export const StyledFrontCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     /* margin-top: 3em;  */
     /* margin-bottom: 2em; */
     width: 30%;
@@ -79,9 +80,13 @@ export const StyledInfoContainer = styled.div`
     position: absolute;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    /* justify-items: center; */
     width: 100%;
     height: 100%;
     background-color: #42cf00b8;
+    /* text-align: center; */
+    /* margin-left: 2em; */
 
     &:hover{
         opacity: 0;
@@ -95,7 +100,7 @@ export const StyledButton = styled.button`
     background-color: #01010128;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     padding-bottom: 2em;
     border: none;
     color: #f8f8f8;
@@ -107,8 +112,11 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledHeader = styled.h3`
-    text-align: left;
-    margin-top: 2em;
+    /* text-align: left; */
+    display: flex;
+    align-self: center;
+    /* justify-self: center; */
+    margin-top: 3em;
     margin-bottom: 0em;
     margin-left: 1em;
     margin-right: 1em;
@@ -128,13 +136,17 @@ export const StyledHeader = styled.h3`
 `;
 
 export const StyledCardp = styled.p`
+    display: flex;
+    align-self: center;
+    /* justify-self: center; */
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     margin-left: 1.75em;
     margin-right: 1em;
+    padding-bottom: 1em;
     /* margin-bottom: 1.5em; */
-    text-align: left;
+    /* text-align: left; */
     line-height: 0.25em;
 
     @media screen and (max-width: 960px) {

@@ -3,8 +3,8 @@ import axios from 'axios';
 import Card from '../Card';
 
 
-const ProductionText = () => {
-    const [productionTextData, setProductionTextData] = useState([])
+const Text = () => {
+    const [textData, setTextData] = useState([])
     
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const ProductionText = () => {
             const result = await axios(
                 'contents.json',
             );
-            setProductionTextData(result.data.productiontext);
+            setTextData(result.data.abouttext);
         };
         fetchData();
 
@@ -21,10 +21,10 @@ const ProductionText = () => {
 
     return (
         <>
-            {productionTextData.map(productionTextData => <Card key={productionTextData.id} {...productionTextData} />)}
+            {textData.map(textData => <Card key={textData.id} {...textData} />)}
         </>
 
     )
 }
 
-export default ProductionText;
+export default Text;

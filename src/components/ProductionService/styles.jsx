@@ -95,7 +95,7 @@ export const StyledButton = styled.button`
     background-color: #01010128;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     padding-bottom: 2em;
     border: none;
     color: #f8f8f8;
@@ -107,8 +107,9 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledHeader = styled.h3`
-    text-align: left;
-    margin-top: 2em;
+    display: flex;
+    align-self: center;
+    margin-top: 3em;
     margin-bottom: 0em;
     margin-left: 1em;
     margin-right: 1em;

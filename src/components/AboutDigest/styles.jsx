@@ -2,16 +2,19 @@ import styled from "styled-components";
 
 
 export const StyledFrontCard = styled.div`
-    position: relative; 
+    /* position: relative;  */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0em 3em 0em 3em;
+    padding: 2em 2em 0em 2em;
     /* margin-top: 3em;  */
     /* margin-bottom: 2em; */
-    width: 30%;
-    min-width: 0%;
-    aspect-ratio: 4 / 3;
-    background-color: #40cf00;
+    width: 100vw;
+    /* height: 200px; */
+    /* min-width: 0%; */
+    /* aspect-ratio: 4 / 3; */
+    /* background-color: #40cf00; */
     /* font-family: 'Poppins'; */
     font-size: 1.2rem;
     overflow: hidden;
@@ -63,82 +66,41 @@ export const StyledFrontCard = styled.div`
     } */
 // `; 
    
-export const StyledFrontCardImg = styled.img`
-    width: 100%;
-    position: relative;
-    align-self: center;
-    object-fit: cover;
-    /* opacity: 50%; */
-
-   
- `; 
+// export const StyledFrontCardImg = styled.img`
+//     width: 100%;
+//     position: relative;
+//     align-self: center;
+//     object-fit: cover;   
+//  `; 
 
 
 
 export const StyledInfoContainer = styled.div`
-    position: absolute;
+    /* position: absolute; */
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #42cf00b8;
-
-    &:hover{
-        opacity: 0;
-    }
-`;
-
-export const StyledButton = styled.button`
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #01010128;
-    display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    padding-bottom: 2em;
-    border: none;
-    color: #f8f8f8;
-    cursor: pointer;
+    width: 100%;
+    /* height: 100%; */
+    /* padding-left: 2em;
+    padding-right: 2em; */
+    /* background-color: #42cf00b8; */
 
-    @media screen and (max-width: 960px) {
-        padding-bottom: 1em;
-}
-`;
-
-export const StyledHeader = styled.h3`
-    display: flex;
-    align-self: center;
-    margin-top: 2em;
-    margin-bottom: 0em;
-    margin-left: 1em;
-    margin-right: 1em;
-    white-space: pre-wrap;
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 900;
-    /* line-height: 1em; */
-
-    @media screen and (max-width: 960px) {
-        font-size: 28px;
-}
-
-    @media screen and (max-width: 400px) {
-        margin-bottom: 0.5em;
-}
+    /* &:hover{
+        opacity: 0;
+    } */
 `;
 
 export const StyledCardp = styled.p`
-    display: flex;
-    align-self: center;
-    color: #ffffff;
-    font-size: 18px;
+    /* position: absolute; */
+    color: #000000;
+    font-size: 24px;
     font-weight: 600;
-    margin-left: 1.75em;
-    margin-right: 1em;
-    padding-bottom: 1em;
-    text-align: left;
-    line-height: 0.25em;
+    margin-left: 4em;
+    margin-right: 4em;
+    /* margin-bottom: 1.5em; */
+    text-align: center;
+    /* line-height: 0.25em; */
 
     @media screen and (max-width: 960px) {
         font-size: 16px;
@@ -148,6 +110,34 @@ export const StyledCardp = styled.p`
         margin-bottom: 1em;
 }
 `;
+
+
+
+
+
+
+// export const StyledHeader = styled.h3`
+//     text-align: left;
+//     margin-top: 2em;
+//     margin-bottom: 0em;
+//     margin-left: 1em;
+//     margin-right: 1em;
+//     white-space: pre-wrap;
+//     color: #ffffff;
+//     font-size: 32px;
+//     font-weight: 900;
+//     /* line-height: 1em; */
+
+//     @media screen and (max-width: 960px) {
+//         font-size: 28px;
+// }
+
+//     @media screen and (max-width: 400px) {
+//         margin-bottom: 0.5em;
+// }
+// `;
+
+
 
 
 

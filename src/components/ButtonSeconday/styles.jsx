@@ -57,7 +57,7 @@ export const StyledButton = styled.button`
     justify-content: center;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    border: 1px solid black;
+    border: 2px solid #2f2e2e;
     border-radius: 10px;
     box-shadow: 3px 3px 12px 6px #d8d8d7; //horizontal vertical blur spread
     /* color: #f8f8f8; */

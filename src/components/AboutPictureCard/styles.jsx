@@ -8,20 +8,20 @@ export const StyledFrontCard = styled.div`
     align-items: center;
     /* margin-top: 3em;  */
     /* margin-bottom: 2em; */
-    width: 30%;
+    width: 90%;
     min-width: 0%;
-    aspect-ratio: 4 / 3;
-    background-color: #40cf00;
+    /* aspect-ratio: 4 / 3; */
+    /* background-color: #40cf00; */
     /* font-family: 'Poppins'; */
     font-size: 1.2rem;
     overflow: hidden;
-    animation-name: slidedown;
+    animation-name: slideleft;
     animation-duration: 2s;
     animation-delay: 0s;
 
-    @keyframes slidedown {
-  0%   {top:-1000px;}
-  100% {top:0px;}
+    @keyframes slideleft {
+  0%   {right:-1500px;}
+  100% {right:0px;}
 }
 
 /* &:hover{
@@ -82,6 +82,7 @@ export const StyledInfoContainer = styled.div`
     width: 100%;
     height: 100%;
     background-color: #42cf00b8;
+    visibility: hidden;
 
     &:hover{
         opacity: 0;
@@ -95,7 +96,7 @@ export const StyledButton = styled.button`
     background-color: #01010128;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     padding-bottom: 2em;
     border: none;
     color: #f8f8f8;
@@ -107,8 +108,7 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledHeader = styled.h3`
-    display: flex;
-    align-self: center;
+    text-align: left;
     margin-top: 2em;
     margin-bottom: 0em;
     margin-left: 1em;
@@ -129,14 +129,12 @@ export const StyledHeader = styled.h3`
 `;
 
 export const StyledCardp = styled.p`
-    display: flex;
-    align-self: center;
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
     margin-left: 1.75em;
     margin-right: 1em;
-    padding-bottom: 1em;
+    /* margin-bottom: 1.5em; */
     text-align: left;
     line-height: 0.25em;
 

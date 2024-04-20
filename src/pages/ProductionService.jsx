@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Contents from '../components/ProductionService/contents/Contents';
 import Digest from '../components/ProductionDigest/digest/Digest';
-import ProductionText from '../components/ProductionText/productionText/ProductionText';
+import Text from '../components/ProductionText/text/Text';
 
 const StyledProductionServiceContainer = styled.div`
 max-width: 100vw;
@@ -38,7 +38,7 @@ const ProductionService = () => {
      <StyledProductionServiceContainer >
         <Digest />
         <Contents />
-        <ProductionText />
+        <Text />
 
     </StyledProductionServiceContainer >
   
