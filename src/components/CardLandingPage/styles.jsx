@@ -6,13 +6,10 @@ export const StyledFrontCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 3em;  */
-    /* margin-bottom: 2em; */
     width: 30%;
     min-width: 0%;
     aspect-ratio: 4 / 3;
     background-color: #40cf00;
-    /* font-family: 'Poppins'; */
     font-size: 1.2rem;
     overflow: hidden;
     animation-name: slidedown;
@@ -24,9 +21,6 @@ export const StyledFrontCard = styled.div`
   100% {top:0px;}
 }
 
-/* &:hover{
-        background-color: none;
-    } */
 
 @media screen and (max-width: 960px) {
     margin-top: 2em; 
@@ -40,37 +34,17 @@ export const StyledFrontCard = styled.div`
 
 @media screen and (max-width: 767px) {
     width: 100%;
-    margin-top: 2em; 
+    margin-top: 1em; 
     margin-bottom: 0em;
 }
 `;
 
-// export const StyledHoverContainer = styled.div`
-// width: 100%;
-// position: relative;
-// `; 
-
-// export const StyledGreenScreen = styled.div`
-// width: 100%;
-// position: absolute;
-// background-color: #1fc61f62;
-// align-self: center;
-// object-fit: cover;
-// z-index: 20;
-
-/* &:hover{
-        visibility: none;
-    } */
-// `; 
    
 export const StyledFrontCardImg = styled.img`
     width: 100%;
     position: relative;
     align-self: center;
     object-fit: cover;
-    /* opacity: 50%; */
-
-   
  `; 
 
 
@@ -117,14 +91,14 @@ export const StyledHeader = styled.h3`
     color: #ffffff;
     font-size: 32px;
     font-weight: 900;
-    /* line-height: 1em; */
 
     @media screen and (max-width: 960px) {
         font-size: 28px;
 }
 
-    @media screen and (max-width: 400px) {
-        margin-bottom: 0.5em;
+    @media screen and (max-width: 767px) {
+        /* margin-bottom: 0.5em; */
+        font-size: 32px;
 }
 `;
 
@@ -144,8 +118,10 @@ export const StyledCardp = styled.p`
         font-size: 16px;
 }
 
-    @media screen and (max-width: 400px) {
-        margin-bottom: 1em;
+    @media screen and (max-width: 767px) {
+        /* margin-bottom: 1em; */
+        font-size: 18px;
+        line-height: 0em;
 }
 `;
 

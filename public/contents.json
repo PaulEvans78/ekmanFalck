@@ -93,7 +93,7 @@
     {
         "id":"11",
         "cta": "Send us an email",
-        "buttonLink": "https://www.paulevans-dop.com"
+        "buttonLink": "mailto:mail@FirstAD.se"
     }
 ],
 
@@ -102,7 +102,7 @@
     {
         "id":"12",
         "cta": "Give us a call",
-        "buttonLink": "https://www.paulevans-dop.com"
+        "buttonLink": "tel:+46739813969"
     }
 ],
 
