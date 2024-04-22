@@ -21,7 +21,7 @@ const StyledNav = styled.nav`
     /* margin-right: 6em; */
     padding-bottom: 1em;
     padding-left: 1em;
-    padding-right: 1em;
+    /* padding-right: 1em; */
     background-color: whitesmoke;
 
     position: fixed;
@@ -29,7 +29,7 @@ const StyledNav = styled.nav`
     transition: top 0.6s;
 
     @media screen and (max-width: 960px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     @media screen and (max-width: 767px) {
@@ -37,6 +37,7 @@ const StyledNav = styled.nav`
         justify-content: space-between;
         margin-top: 0;
         padding-top: 0.5em;
+        padding-left: 0em;
   }
 
     `;
@@ -94,12 +95,12 @@ const StyledIdent = styled.div `
 
    
 
-    /* @media screen and (max-width: 960px) {
-        width: 200px; 
-    } */
+    @media screen and (max-width: 960px) {
+        padding-left: 3em;
+    }
 
     @media screen and (max-width: 767px) {
-        /* width: 110px;  */
+        padding-left: 0em;
     }
 
     /* @media screen and (max-width: 355px) {
@@ -170,18 +171,22 @@ const StyledNavul = styled.ul`
     margin-left: 1em;
     padding-right: 1.5em;
 
-    
+    /* @media screen and (max-width: 960px) {
+       
+    } */
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 960px) {
         position: fixed;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        top: 100px;
+        padding-top: 6em;
+        /* justify-content: center; */
+        /* align-content: center; */
+        top: 140px;
         right: 0;
         height: 100vh;
         width: 100vw;
-        background-color: whitesmoke;
+        background-color: #40cf00;
         /* text-align: center; */
         transform: translateY(800px);
         -webkit-transform: translateY(800px); /* Safari */
@@ -192,6 +197,19 @@ const StyledNavul = styled.ul`
         margin-top: 0;
         margin-right: 0;
         margin-bottom: 0em;
+        margin-left: 0em;
+        padding-right: 0em;
+    }
+
+    @media screen and (max-width: 767px) {
+        top: 100px;
+        transform: translateY(900px);
+        -webkit-transform: translateY(900px); /* Safari */
+        -moz-transform: translateY(900px); /* Firefox */
+        transition: 0.5s ease-in-out; 
+        -webkit-transition: transform 0.5s ease-in-out;
+        -moz-transition: transform 0.5s ease-in-out;
+    
     }
 
     `;
@@ -217,7 +235,7 @@ const StyledLink = styled(Link)`
     text-decoration: underline;
   }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 960px) {
         justify-content: center;
         align-self: center;
         margin: 1em 0em 0em 0em;
@@ -225,6 +243,7 @@ const StyledLink = styled(Link)`
 
     &:hover{
         text-decoration: none;
+        color: whitesmoke;
     }
     
   }
@@ -249,7 +268,7 @@ const ExternalStyledLink = styled.a`
     text-decoration: underline;
   }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 960px) {
         justify-content: center;
         align-self: center;
         font-size: 32px;
@@ -268,6 +287,13 @@ const ExternalStyledLink = styled.a`
 
 const StyledHamburger = styled.div`
     display: none;
+
+@media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-right: 6em;
+}
 
 @media screen and (max-width: 767px) {
     display: flex;

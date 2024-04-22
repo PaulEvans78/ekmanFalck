@@ -32,7 +32,7 @@ const StyledFooter = styled.footer`
   width: 100%;
   max-width: 100%;
   height: 200px;
-  z-index: 100;
+  z-index: 50;
   bottom: 0;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -48,15 +48,14 @@ const StyledFooter = styled.footer`
   margin-bottom: 0;
 
   @media screen and (max-width: 960px) {
-    height: 450px;
+    height: 230px;
     padding-left: 0em;
     padding-right: 0em;
-    grid-template-columns: none;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-    "logo"
-    "contact"
-    "copyright" ;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    /* grid-template-areas:
+    "logo contact"
+    "copyright copyright" ; */
     /* background-image: none;
     background-color: whitesmoke;
     flex-direction: column;
@@ -65,6 +64,12 @@ const StyledFooter = styled.footer`
   
   @media screen and (max-width: 767px) {
     height: 500px;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-areas:
+    "logo"
+    "contact"
+    "copyright" ;
     /* background-image: none;
     background-color: whitesmoke;
     flex-direction: column;
@@ -83,7 +88,17 @@ const StyledImageandName = styled.div `
         max-width: 100%;
         /* width: 60%; */
         display: flex;
+        justify-content: flex-start;
+        padding-left: 5em;
+  }
+
+  @media screen and (max-width: 767px) {
+        width: 100%;
+        max-width: 100%;
+        /* width: 60%; */
+        display: flex;
         justify-content: center;
+        padding-left: 0em;
   }
 
     @media screen and (max-width: 355px) {
@@ -128,7 +143,7 @@ const StyledName = styled.h1 `
       justify-self:center; */
         font-size: 52px;
         margin-top: 1em;
-        margin-bottom: 1em;
+        /* margin-bottom: 1em; */
         /* line-height: 30px; */
     }
 
@@ -164,8 +179,12 @@ const StyledContactContainer = styled.div`
         width: 100%;
         max-width: 100%;
         justify-content: space-evenly;
+        align-items: center;
         text-align: center; 
         padding-right: 0em;
+        padding-bottom: 1em;
+        padding-top: 3em;
+        /* margin-right: 4em; */
     }
 
   @media screen and (max-width: 767px) {
@@ -318,12 +337,16 @@ const StyledCopyRightContainer = styled.div`
     width: 100%;
     max-width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1em;
+    
     }
 
   @media screen and (max-width: 767px) {
+    padding-top: 1em;
     /* justify-content: center; */
+    align-items: center;
     /* display: none;
     flex-direction: row; */
     }
@@ -335,12 +358,14 @@ const StyledCopyRight = styled.div`
 
   @media screen and (max-width: 960px) {
     font-size: 12;
+    margin-left: 5em;
     /* margin-left: 1em;
     margin-right: 1em;
     margin-top: 2em; */
     }
 
   @media screen and (max-width: 767px) {
+    margin-left: 0em;
     /* font-size: 8px;
     margin-left: 1em;
     margin-right: 1em;
