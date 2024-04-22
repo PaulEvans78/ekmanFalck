@@ -48,6 +48,16 @@ const StyledButtonContainer = styled.div`
   padding-right: 12em; */
   /* justify-items: center; */
   /* background-color: red; */
+
+  @media screen and (max-width: 960px) {
+    height: 140px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    height: 280px;
+    margin-bottom: 0em;
+  }
 `;
 
 const FilmProduction = () => {

@@ -32,8 +32,10 @@ export const StyledFrontCard = styled.div`
     } */
 
 @media screen and (max-width: 960px) {
-    margin-top: 2em; 
-    width: 40%;
+    margin: 0em 2em 0em 2em;
+    padding: 2em 2em 0em 2em;
+    /* margin-top: 2em;  */
+    /* width: 40%; */
     
     @keyframes slidedown {
   0%   {bottom:-1000px;}
@@ -43,8 +45,10 @@ export const StyledFrontCard = styled.div`
 
 @media screen and (max-width: 767px) {
     width: 100%;
-    margin-top: 2em; 
-    margin-bottom: 0em;
+    margin: 0em 1em 0em 1em;
+    padding: 2em 0em 0em 0em;
+    /* margin-top: 2em;  */
+    /* margin-bottom: 0em; */
 }
 `;
 
@@ -80,7 +84,7 @@ export const StyledInfoContainer = styled.div`
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
-    width: 100%;
+    width: 90%;
     /* height: 100%; */
     /* padding-left: 2em;
     padding-right: 2em; */
@@ -89,6 +93,10 @@ export const StyledInfoContainer = styled.div`
     /* &:hover{
         opacity: 0;
     } */
+
+    /* @media screen and (max-width: 960px) {
+        width: 90%;
+} */
 `;
 
 export const StyledCardp = styled.p`
@@ -96,19 +104,19 @@ export const StyledCardp = styled.p`
     color: #000000;
     font-size: 24px;
     font-weight: 600;
-    margin-left: 4em;
-    margin-right: 4em;
+    /* margin-left: 4em; */
+    /* margin-right: 4em; */
     /* margin-bottom: 1.5em; */
     text-align: center;
     /* line-height: 0.25em; */
 
     @media screen and (max-width: 960px) {
-        font-size: 16px;
+        font-size: 18px;
 }
 
-    @media screen and (max-width: 400px) {
+    /* @media screen and (max-width: 400px) {
         margin-bottom: 1em;
-}
+} */
 `;
 
 

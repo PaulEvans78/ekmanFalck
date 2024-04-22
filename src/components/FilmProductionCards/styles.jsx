@@ -100,7 +100,7 @@ export const StyledButton = styled.button`
     background-color: #01010128;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
+    justify-content: center;
     padding-bottom: 2em;
     border: none;
     color: #f8f8f8;

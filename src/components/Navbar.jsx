@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Spin as Hamburger } from 'hamburger-react'
 import { Link, useLocation } from "react-router-dom";
+import ef_logo from '../assets/ef_logo.png';
 
 
 const StyledNav = styled.nav`
@@ -56,34 +57,41 @@ const StyledImageandName = styled.div `
   }
 `;
 
-// const StyledImgContainer = styled.div `
-//         float: left;
-// `;
+const StyledImgContainer = styled.div `
+    display: none;
 
-// const StyledImg = styled.img`
-//         text-align: center;
-//         width: 65px; 
-//         margin-left: 1em;
-//         margin-right: 1em;
-//         margin-top: 0.75em;
-//         padding-bottom: 0.75em;
+    @media screen and (max-width: 969px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+  }
+       
+`;
+
+const StyledImg = styled.img`
+        text-align: center;
+        width: 200px; 
+        /* margin-left: 1em;
+        margin-right: 1em; */
+        margin-top: 8em;
+        /* padding-bottom: 0.75em; */
 
    
 
-//     @media screen and (max-width: 960px) {
-//         margin-right: 0.5em;
-//         margin-top: 1em;
-//   }
+    /* @media screen and (max-width: 960px) {
+        margin-right: 0.5em;
+        margin-top: 1em;
+  }
 
-//   @media screen and (max-width: 767px) {
-//         width: 50px; 
-//         margin-top: 0.5em;
-//   }
+  @media screen and (max-width: 767px) {
+        width: 50px; 
+        margin-top: 0.5em;
+  }
 
-//   @media screen and (max-width: 355px) {
-//         display: none;
-//   }
-// `;
+  @media screen and (max-width: 355px) {
+        display: none;
+  } */
+`;
 
 const StyledIdent = styled.div `
     float: left;
@@ -188,9 +196,9 @@ const StyledNavul = styled.ul`
         width: 100vw;
         background-color: #40cf00;
         /* text-align: center; */
-        transform: translateY(800px);
-        -webkit-transform: translateY(800px); /* Safari */
-        -moz-transform: translateY(800px); /* Firefox */
+        transform: translateY(1100px);
+        -webkit-transform: translateY(1100px); /* Safari */
+        -moz-transform: translateY(1100px); /* Firefox */
         transition: 0.5s ease-in-out; 
         -webkit-transition: transform 0.5s ease-in-out;
         -moz-transition: transform 0.5s ease-in-out;
@@ -203,13 +211,6 @@ const StyledNavul = styled.ul`
 
     @media screen and (max-width: 767px) {
         top: 100px;
-        transform: translateY(900px);
-        -webkit-transform: translateY(900px); /* Safari */
-        -moz-transform: translateY(900px); /* Firefox */
-        transition: 0.5s ease-in-out; 
-        -webkit-transition: transform 0.5s ease-in-out;
-        -moz-transition: transform 0.5s ease-in-out;
-    
     }
 
     `;
@@ -389,6 +390,10 @@ const links = [
                  {/* {links.map(link => link.isExternal ? <ExternalStyledLink key={link.id} href={link.href} className={activePage === link.to ? "active" : ""}>{link.text}</ExternalStyledLink> : <StyledLink onClick={() => {setOpen(false); setHamburgerActive(false); link.onClick();}} to={link.to} key={link.id} className={activePage === link.to ? "active" : ""}>{link.text}</StyledLink>)} */}
                  {links.map(link => link.isExternal ? <ExternalStyledLink key={link.id} href={link.href} className={activePage === link.to ? "active" : ""} onClick={() => { setOpen(false); setHamburgerActive(false); link.onClick(); }}> {link.text} </ExternalStyledLink> : <StyledLink onClick={() => {setOpen(false); setHamburgerActive(false); link.onClick();}} to={link.to} key={link.id} className={activePage === link.to ? "active" : ""}>{link.text}</StyledLink>)}
                 
+
+                    <StyledImgContainer>
+                        <StyledImg src={ef_logo} alt="the letters e and f merged together" />
+                    </StyledImgContainer>
 
             </StyledNavul>
 

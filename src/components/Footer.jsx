@@ -48,7 +48,7 @@ const StyledFooter = styled.footer`
   margin-bottom: 0;
 
   @media screen and (max-width: 960px) {
-    height: 230px;
+    height: 200px;
     padding-left: 0em;
     padding-right: 0em;
     /* grid-template-columns: repeat(2, 1fr);
@@ -126,7 +126,7 @@ const StyledIdent = styled.div `
 `;
 
 const StyledName = styled.h1 `
-    font-size: 52px;
+    font-size: 48px;
     line-height: 50px;
     letter-spacing: 0em;
     font-weight: bold;
@@ -141,16 +141,17 @@ const StyledName = styled.h1 `
     @media screen and (max-width: 960px) {
       /* display: flex;
       justify-self:center; */
-        font-size: 52px;
-        margin-top: 1em;
+        font-size: 48px;
+        /* margin-top: 1em; */
         /* margin-bottom: 1em; */
         /* line-height: 30px; */
     }
 
     @media screen and (max-width: 767px) {
         margin-bottom: 0em;
-        /* font-size: 32px;
-        line-height: 30px; */
+        margin-left: 0.15em;
+        /* font-size: 32px; */
+        
     }
 
     @media screen and (max-width: 355px) {
@@ -221,7 +222,7 @@ const Styledp = styled.p`
   font-size: 24px;
 
   @media screen and (max-width: 960px) {
-    
+    margin-top: 0%;
     /* font-size: 18px;
     line-height: 10px;
     margin-left: 0em; */
