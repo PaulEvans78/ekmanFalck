@@ -5,6 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 import ef_logo from '../assets/ef_logo.png';
 
 
+
+
 const StyledNav = styled.nav`
     grid-area: top;
     width: 100%;
@@ -60,10 +62,11 @@ const StyledImageandName = styled.div `
 const StyledImgContainer = styled.div `
     display: none;
 
-    @media screen and (max-width: 969px) {
+    @media screen and (max-width: 960px) {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 4em;
   }
        
 `;
@@ -187,10 +190,10 @@ const StyledNavul = styled.ul`
         position: fixed;
         display: flex;
         flex-direction: column;
-        padding-top: 6em;
+        padding-top: 0em;
         /* justify-content: center; */
         /* align-content: center; */
-        top: 140px;
+        top: 0px;
         right: 0;
         height: 100vh;
         width: 100vw;
@@ -207,10 +210,12 @@ const StyledNavul = styled.ul`
         margin-bottom: 0em;
         margin-left: 0em;
         padding-right: 0em;
+        padding-inline-start: 0px;
+
     }
 
     @media screen and (max-width: 767px) {
-        top: 100px;
+        top: 0px;
     }
 
     `;
@@ -305,6 +310,8 @@ const StyledHamburger = styled.div`
 `;
 
 
+
+
 const Navbar = () => {
     const location = useLocation();
     const [open, setOpen] = useState(false); // Hamburger menu
@@ -312,6 +319,10 @@ const Navbar = () => {
     const [hamburgerActive, setHamburgerActive] = useState(false); // Hamburger menu
     const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
     const [visible, setVisible] = useState(true);
+
+
+
+
 
     useEffect(() => {
         setActivePage(location.pathname);
@@ -362,40 +373,41 @@ const links = [
 
     return (
         
+        // NAVBAR
         <StyledNav visible={visible}> 
 
             <StyledImageandName>
                 <Link to="/">
-                  
-                    {/* <StyledImgContainer>
-                        <StyledImg src={logoWhite_large} alt="Ekman & Falck" onClick={() => {setOpen(false);}} />
-                    </StyledImgContainer> */}
 
                     <StyledIdent>
                         <StyledName>Ekman
                                     &Falck</StyledName>
-                        {/* <StyledTitle>1st Assistant Director</StyledTitle> */}
                     </StyledIdent>
                     
-                            
-
-                        
-
                 </Link>  
             </StyledImageandName>        
 
 
 
             <StyledNavul style={{transform: open ? "translateX(0px)" : ""}}>
+
+                    <StyledImgContainer>
+                        <StyledImg src={ef_logo} alt="the letters e and f merged together" />
+                    </StyledImgContainer>   
+
+                
                  {/* {links.map(link => link.isExternal ? <ExternalStyledLink key={link.id} href={link.href} className={activePage === link.to ? "active" : ""}>{link.text}</ExternalStyledLink> : <StyledLink onClick={() => {setOpen(false); setHamburgerActive(false); link.onClick();}} to={link.to} key={link.id} className={activePage === link.to ? "active" : ""}>{link.text}</StyledLink>)} */}
                  {links.map(link => link.isExternal ? <ExternalStyledLink key={link.id} href={link.href} className={activePage === link.to ? "active" : ""} onClick={() => { setOpen(false); setHamburgerActive(false); link.onClick(); }}> {link.text} </ExternalStyledLink> : <StyledLink onClick={() => {setOpen(false); setHamburgerActive(false); link.onClick();}} to={link.to} key={link.id} className={activePage === link.to ? "active" : ""}>{link.text}</StyledLink>)}
                 
 
-                    <StyledImgContainer>
+                    {/* <StyledImgContainer>
                         <StyledImg src={ef_logo} alt="the letters e and f merged together" />
-                    </StyledImgContainer>
+                    </StyledImgContainer> */}
 
             </StyledNavul>
+
+
+            {/* hamburger Icon i navbar */}
 
             <StyledHamburger>
             <div onClick={() => { setOpen(!open); setHamburgerActive(!hamburgerActive); }}>
