@@ -49,14 +49,14 @@ export const StyledButton = styled.button`
     /* position: absolute; */
     /* height: 80px; */
     width: 240px;
-    background-color: #42cf00;
+    background-color: #40cf00;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
-    border: 2px solid #2f2e2e;
+    border: 2px solid whitesmoke;
     border-radius: 50px; 
     box-shadow: 3px 3px 12px 6px #d8d8d7; //horizontal vertical blur spread
     /* color: #f8f8f8; */
@@ -64,6 +64,7 @@ export const StyledButton = styled.button`
 
     &:hover{
         background-color: #fdfdfd;
+        border: 2px solid #40cf00;
     }
 
     @media screen and (max-width: 960px) {
