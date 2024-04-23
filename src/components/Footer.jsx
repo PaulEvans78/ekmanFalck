@@ -165,12 +165,13 @@ const StyledContactContainer = styled.div`
   grid-area: contact;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* align-content: space-around; */
   /* justify-items: flex-start; */
   /* text-align: center; */
-  padding-right: 4em;
+  /* padding-right: 4em; */
   /* padding-top: 1em; */
+  padding-left: 8em;
 
   @media screen and (max-width: 1920px) {
     padding-right: 0em;
@@ -185,6 +186,7 @@ const StyledContactContainer = styled.div`
         padding-right: 0em;
         padding-bottom: 1em;
         padding-top: 3em;
+        padding-left: 0em;
         /* margin-right: 4em; */
     }
 
@@ -209,6 +211,7 @@ const StyledContactSouthAfrica = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: 2em;
 
   /* @media screen and (max-width: 960px) {
     justify-content: center;
