@@ -15,14 +15,15 @@ export const StyledButtonCard = styled.div`
     /* font-family: 'Poppins'; */
     /* font-size: 1.2rem; */
     overflow: hidden;
-    animation-name: slidedown;
+    
+    /* animation-name: slidedown;
     animation-duration: 2s;
     animation-delay: 0s;
 
     @keyframes slidedown {
   0%   {top:-1000px;}
   100% {top:0px;}
-}
+} */
 
 /* &:hover{
         background-color: none;
@@ -49,22 +50,22 @@ export const StyledButton = styled.button`
     /* position: absolute; */
     /* height: 80px; */
     width: 240px;
-    background-color: #40cf00;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
-    border: 2px solid whitesmoke;
+    border: 3px solid #40cf00;
     border-radius: 50px; 
     box-shadow: 3px 3px 12px 6px #d8d8d7; //horizontal vertical blur spread
     /* color: #f8f8f8; */
     cursor: pointer;
 
     &:hover{
-        background-color: #fdfdfd;
-        border: 2px solid #40cf00;
+        background-color: #40cf00;
+        border: 2px solid whitesmoke;
     }
 
     @media screen and (max-width: 960px) {
