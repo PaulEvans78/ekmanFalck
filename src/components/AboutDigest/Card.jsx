@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledFrontCard, StyledInfoContainer, StyledCardp } from './styles';
+import { StyledFrontCard, StyledInfoContainer, StyledCardp, StyledHeader } from './styles';
 // import Buttons from '../ButtonsContact/button';
 
 
@@ -16,6 +16,8 @@ function Card (props) {
         <StyledFrontCard>
                 
                         <StyledInfoContainer>
+
+                                <StyledHeader>{props.headline}</StyledHeader>
                             
                                 <StyledCardp>{props.description}</StyledCardp>
 

@@ -82,7 +82,7 @@ export const StyledFrontCard = styled.div`
 export const StyledInfoContainer = styled.div`
     /* position: absolute; */
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     width: 90%;
     /* height: 100%; */
@@ -124,26 +124,26 @@ export const StyledCardp = styled.p`
 
 
 
-// export const StyledHeader = styled.h3`
-//     text-align: left;
-//     margin-top: 2em;
-//     margin-bottom: 0em;
-//     margin-left: 1em;
-//     margin-right: 1em;
-//     white-space: pre-wrap;
-//     color: #ffffff;
-//     font-size: 32px;
-//     font-weight: 900;
-//     /* line-height: 1em; */
+export const StyledHeader = styled.h2`
+    text-align: center;
+    /* margin-top: 2em; */
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    white-space: pre-wrap;
+    color: #000000;
+    font-size: 48px;
+    font-weight: 600;
+    /* line-height: 1em; */
 
-//     @media screen and (max-width: 960px) {
-//         font-size: 28px;
-// }
+    @media screen and (max-width: 960px) {
+        font-size: 28px;
+}
 
-//     @media screen and (max-width: 400px) {
-//         margin-bottom: 0.5em;
-// }
-// `;
+    @media screen and (max-width: 400px) {
+        margin-bottom: 0.5em;
+}
+`;
 
 
 
