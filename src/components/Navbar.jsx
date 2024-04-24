@@ -44,6 +44,7 @@ const StyledNav = styled.nav`
   }
 
     `;
+    
 
 const StyledImageandName = styled.div `
         width: 180px;
@@ -174,31 +175,21 @@ const StyledName = styled.h1 `
 const StyledNavul = styled.ul`
     width: auto;
     display: flex;
-    /* align-self: flex-end; */
-    /* justify-content: flex-end;  */
-    /* align-items: flex-end; */
     list-style-type: none;
-    /* margin-right: 2em; */
     margin-left: 1em;
-    padding-right: 1.5em;
-
-    /* @media screen and (max-width: 960px) {
-       
-    } */
+    padding-right: 2.5em;
+    /* padding-top: 4em; */
 
     @media screen and (max-width: 960px) {
         position: fixed;
         display: flex;
         flex-direction: column;
         padding-top: 0em;
-        /* justify-content: center; */
-        /* align-content: center; */
         top: 0px;
         right: 0;
         height: 100vh;
         width: 100vw;
         background-color: #40cf00;
-        /* text-align: center; */
         transform: translateY(1100px);
         -webkit-transform: translateY(1100px); /* Safari */
         -moz-transform: translateY(1100px); /* Firefox */
@@ -414,8 +405,7 @@ const links = [
                 <Hamburger toggled={hamburgerActive} />
                 </div>
                 </StyledHamburger>
-            
-            
+
         </StyledNav>
         
 
