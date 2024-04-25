@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import FilmProduction from "./pages/FilmProduction";
 import ProductionService from "./pages/ProductionService";
 import About from "./pages/About";
+import PlayerModal from './components/PlayerModal/player/Player';
 
 
 // import {
@@ -71,7 +72,9 @@ function App() {
 
                   </Switch>
 
-                    {/* </MainContainer> */}
+                   
+                      <PlayerModal />
+                    
 
               <Footer />
                     

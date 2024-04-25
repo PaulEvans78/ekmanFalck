@@ -2,52 +2,52 @@
     "landingpage": [
     
     {   
-        "id":"1",
+        "id":"home1",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
         "description": "Director.",
-        "cta": "See film.",
-        "buttonLink": "/Design"
+        "cta": "Agency.",
+        "buttonLink": "/PlayerModal"
     },
     {
-        "id":"2",
+        "id":"home2",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
         "description": "Director.",
-        "cta": "See film.",
-        "buttonLink": "https://www.paulevans-dop.com"
+        "cta": "Agency.",
+        "buttonLink": "/PlayerModal"
     },
     {
-        "id":"3",
+        "id":"home3",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
         "description": "Director.",
-        "cta": "See film.",
-        "buttonLink": "https://www.paulevans-dop.com"
+        "cta": "Agency.",
+        "buttonLink": "/PlayerModal"
     },
     {
-        "id":"4",
+        "id":"home4",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
         "description": "Director.",
-        "cta": "See film.",
-        "buttonLink": "https://www.paulevans-dop.com"
+        "cta": "Agency.",
+        "buttonLink": "/PlayerModal"
     },
     {
-        "id":"5",
+        "id":"home5",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
         "description": "Director.",
-        "cta": "See film.",
-        "buttonLink": "https://www.paulevans-dop.com"
+        "cta": "Agency.",
+        "buttonLink": "/PlayerModal"
     },
     {
-        "id":"6",
+        "id":"home6",
         "mainPic": "placeholder.png",
         "headline": "Grandiosa",
         "description": "Director.",
-        "cta": "See film.",
-        "buttonLink": "https://www.paulevans-dop.com"
+        "cta": "Agency.",
+        "buttonLink": "/PlayerModal"
     }
 ],
 
@@ -148,7 +148,7 @@
     "aboutdigest": [
     
     {
-        "id":"13",
+        "id":"15",
         "headline": "About Us",
         "description": "About - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
     }
@@ -157,7 +157,7 @@
     "aboutpicture": [
     
     {
-        "id":"11",
+        "id":"16",
         "mainPic": "aboutplaceholder.png"
     }
 ],
@@ -165,8 +165,18 @@
     "abouttext": [
     
     {
-        "id":"13",
+        "id":"17",
         "description": "About - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
+    }
+],
+
+    "playermodal": [
+    
+    {
+        "id":"18",
+        "mainPic": "aboutplaceholder.png",
+        "headline": "Grandiosa. Kebab Rulle",
+        "description": "Director: Fredrik Falck. Agency: xxxxx."
     }
 ]
 

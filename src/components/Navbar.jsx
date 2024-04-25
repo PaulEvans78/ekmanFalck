@@ -14,7 +14,7 @@ const StyledNav = styled.nav`
     /* min-width: 100vw; */
     overflow-x: hidden;
     overflow-y: hidden;
-    z-index: 100;
+    z-index: 99;
     display: flex;
     /* align-self: center; */
     flex-direction: row;

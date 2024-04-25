@@ -9,7 +9,7 @@ export const StyledFrontCard = styled.div`
     width: 30%;
     min-width: 0%;
     aspect-ratio: 4 / 3;
-    background-color: #40cf00;
+    background-color: #43cf02;
     font-size: 1.2rem;
     overflow: hidden;
     animation-name: slidedown;
@@ -55,7 +55,7 @@ export const StyledInfoContainer = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #42cf00b8;
+    background-color: #51ff00b8; // #42cf00b8
 
     &:hover{
         opacity: 0;

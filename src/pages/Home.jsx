@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Contents from '../components/CardLandingPage/contents';
 
+
 const StyledHomeContainer = styled.div`
 grid-area: main;
 max-width: 100vw;
@@ -29,6 +30,7 @@ const Home = () => {
      <StyledHomeContainer>
 
         <Contents />
+       
 
     </StyledHomeContainer>
   
