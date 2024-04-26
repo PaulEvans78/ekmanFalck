@@ -5,6 +5,7 @@ export const StyledModal = styled.div`
     position: fixed; 
     /* top:0; */
     display: flex;
+    /* visibility: hidden; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -102,7 +103,7 @@ export const StyledCloseModal = styled.p`
     } */
 // `; 
    
-export const StyledFrontCardImg = styled.img`
+export const StyledFrontCardImg = styled.video`
     width: 100%;
     position: relative;
     align-self: center;

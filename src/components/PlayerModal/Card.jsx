@@ -13,27 +13,22 @@ function Card (props) {
 
         const [modalOpen, setModalOpen] = useState(true); // Set modalOpen to true initially
 
-  const closeModal = () => {
-    setModalOpen(false); // Function to close the modal
-  };
-      
-  
+        const closeModal = () => {
+          setModalOpen(false); // Function to close the modal
+        };
+            
 
     return (
         
     
         <>
-      {/* Button to toggle the modal */}
-      {/* <StyledBtnModal onClick={toggleModal}>Open Modal</StyledBtnModal> */}
+    
 
       {/* Modal content */}
       {modalOpen && (
         <StyledModal>
 
               
-                
-                {/* <StyledHoverContainer> */}
-                {/* <StyledGreenScreen></StyledGreenScreen> */}
 
                 <StyledVideoContainer>
                 
@@ -44,7 +39,7 @@ function Card (props) {
                 </StyledCloseModal>
                         
                
-                <StyledFrontCardImg src={props.mainPic} alt="Category Image"/>
+                <StyledFrontCardImg src={props.mainVid} alt="Category Image"/>
                 {/* </StyledHoverContainer> */}
                     
                 </StyledVideoContainer>

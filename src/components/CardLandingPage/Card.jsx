@@ -8,8 +8,6 @@ import { StyledFrontCard, StyledFrontCardImg, StyledButton, StyledInfoContainer,
 
 function Card (props) {
 
-        
-                  
     return (
         
     

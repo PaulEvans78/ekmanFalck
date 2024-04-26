@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState} from 'react';
 import styled from "styled-components";
 import Contents from '../components/CardLandingPage/contents';
+// import PlayerModal from '../components/PlayerModal/player/Player';
 
 
 const StyledHomeContainer = styled.div`
@@ -25,12 +26,14 @@ padding-bottom: 4em;
 
 const Home = () => {
 
+
   return (
     
      <StyledHomeContainer>
 
-        <Contents />
-       
+        <Contents/>
+
+        {/* <PlayerModal/> */}
 
     </StyledHomeContainer>
   

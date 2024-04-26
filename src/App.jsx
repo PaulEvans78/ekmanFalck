@@ -9,6 +9,7 @@ import About from "./pages/About";
 import PlayerModal from './components/PlayerModal/player/Player';
 
 
+
 // import {
 
 //   BrowserRouter as Routes,
@@ -39,6 +40,7 @@ grid-template-areas:
 
 
 function App() {
+  
   
   return (
     <HashRouter>
@@ -73,7 +75,7 @@ function App() {
                   </Switch>
 
                    
-                      <PlayerModal />
+                      <PlayerModal/>
                     
 
               <Footer />
