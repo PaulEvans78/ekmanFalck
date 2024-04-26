@@ -29,52 +29,57 @@ import ef_logo from '../assets/ef_logo_footer.png';
 
 const StyledFooter = styled.footer`
   grid-area: footer;
-  background-color: #40cf00;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-self: center;
+  background-color: whitesmoke;
   width: 100%;
   max-width: 100%;
-  height: 200px;
+  min-height: 100%;
+  height: 160px;
   z-index: 50;
   bottom: 0;
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-  "logo countries contact"
-  "copyright copyright copyright";
   font-size: 14px;
   line-height: 24px;
   color: whitesmoke;
-  padding-left: 4em;
-  /* padding-right: 4em; */
   margin-bottom: 0;
 
   @media screen and (max-width: 960px) {
     height: 200px;
     padding-left: 0em;
     padding-right: 0em;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); */
-    /* grid-template-areas:
-    "logo contact"
-    "copyright copyright" ; */
-    /* background-image: none;
-    background-color: whitesmoke;
-    flex-direction: column;
-    align-items: center; */
   }
   
   @media screen and (max-width: 767px) {
-    height: 500px;
+    height: 450px;
+  }
+`;
+
+const StyledContentsContainer = styled.div`
+    width: 92%;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "logo countries contact";
+    align-self: center;
+    background-color: #40cf00;
+
+    @media screen and (max-width: 960px) {
+  
+  }
+  
+    @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 450px;
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr); 
     grid-template-areas:
     "logo"
-    "contact"
-    "copyright" ;
-    /* background-image: none;
-    background-color: whitesmoke;
-    flex-direction: column;
-    align-items: center; */
+    "countries"
+    "contact";
   }
 `;
 
@@ -82,28 +87,21 @@ const StyledImageandName = styled.div `
         grid-area: logo;
         width: 180px;
         height: 100%;
-        /* padding-left: 2.5em; */
 
     @media screen and (max-width: 960px) {
         width: 100%;
         max-width: 100%;
-        /* width: 60%; */
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 5em;
+        /* display: flex; */
+        /* justify-content: flex-start; */
+        padding-left: 3em;
   }
 
   @media screen and (max-width: 767px) {
         width: 100%;
         max-width: 100%;
-        /* width: 60%; */
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
         padding-left: 0em;
-  }
-
-    @media screen and (max-width: 355px) {
-        /* width: 80%;  */
   }
 `;
 
@@ -111,20 +109,20 @@ const StyledImageandName = styled.div `
 const StyledIdent = styled.div `
     float: left;
     display: flex;
-    align-items: center;
     padding-top: 2em;
-    width: 170px; 
-    /* height: 100%;  */
-    /* padding-left: 0.5em; */
+    width: 170px;
+    padding-left: 4em;
     text-align: left;
     
     @media screen and (max-width: 960px) {
-    display: flex;
-    justify-self: center;
+      padding-left: 0em;
     }
 
     @media screen and (max-width: 767px) {
-        /* width: 110px;  */
+        width: 100%;
+        justify-content: center;
+        padding-top: 4em;
+        /* align-content: center; */
     }
 
 `;
@@ -132,26 +130,10 @@ const StyledIdent = styled.div `
 const StyledImg = styled.img`
         text-align: center;
         width: 50px; 
-        /* margin-left: 1em;
-        margin-right: 1em; */
-        /* margin-top: 8em; */
-        /* padding-bottom: 0.75em; */
 
-   
-
-    /* @media screen and (max-width: 960px) {
-        margin-right: 0.5em;
-        margin-top: 1em;
-  }
-
-  @media screen and (max-width: 767px) {
-        width: 50px; 
-        margin-top: 0.5em;
-  }
-
-  @media screen and (max-width: 355px) {
-        display: none;
-  } */
+        @media screen and (max-width: 767px) {
+          /* justify-self: center; */
+    }
 `;
 
 
@@ -160,14 +142,8 @@ const StyledCountriesContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* 
-  justify-content: space-evenly; */
-  /* align-content: space-around; */
-  /* justify-items: flex-start; */
-  /* text-align: center; */
-  /* padding-right: 4em; */
-  /* padding-top: 1em; */
-  /* padding-left: 8em; */
+  padding-bottom: 3em;
+  padding-left: 2em;
 
   @media screen and (max-width: 1920px) {
     padding-right: 0em;
@@ -183,29 +159,21 @@ const StyledCountriesContainer = styled.div`
         padding-bottom: 1em;
         padding-top: 3em;
         padding-left: 0em;
-        /* margin-right: 4em; */
     }
 
   @media screen and (max-width: 767px) {
       flex-direction: column;
-    
+      justify-content: flex-end;
+      padding-bottom: 3em;
+      padding-top: 0em;
     }
 `;
-
-
-
 
 const StyledContactContainer = styled.div`
   grid-area: contact;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-content: center; */
-  /* justify-items: flex-start; */
-  /* text-align: center; */
-  /* padding-right: 4em; */
-  /* padding-top: 1em; */
-  /* padding-left: 8em; */
 
   @media screen and (max-width: 1920px) {
     padding-right: 0em;
@@ -217,29 +185,27 @@ const StyledContactContainer = styled.div`
         justify-content: space-evenly;
         align-items: center;
         text-align: center; 
-        padding-right: 0em;
+        padding-right: 3em;
         padding-bottom: 1em;
         padding-top: 3em;
         padding-left: 0em;
-        /* margin-right: 4em; */
     }
 
   @media screen and (max-width: 767px) {
+      height: 80px;
       flex-direction: column;
-    
+      padding-top: 0em;
     }
 `;
 
 const StyledContact = styled.div`
-  display: flex;
-  flex-direction: column;
-  /* width: 100%; */
-  /* justify-content: flex-end; */
-  /* align-content: flex-start; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
 
-  /* @media screen and (max-width: 960px) {
-    justify-content: center;
-  } */
+  @media screen and (max-width: 767px) {
+    padding-left: 0em;
+    }
 `;
 
 
@@ -248,13 +214,10 @@ const Styledp = styled.p`
   margin-bottom: -0.25em;
   color: black;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 24px;
 
   @media screen and (max-width: 960px) {
     margin-top: 0%;
-    /* font-size: 18px;
-    line-height: 10px;
-    margin-left: 0em; */
   }
 
   @media screen and (max-width: 767px) {
@@ -266,10 +229,10 @@ const Styledp = styled.p`
 const StyledMailLink = styled.p`
   display: flex;
   flex-direction: column;
-  align-self: center;
-  justify-self: center;
+  align-self: flex-start;
   margin-bottom: -0.75em;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
 
   &:hover{
         text-decoration: underline;
@@ -277,6 +240,7 @@ const StyledMailLink = styled.p`
 
   @media screen and (max-width: 767px) {
     margin-left: 0em;
+    align-self: center;
 
     &:hover{
         text-decoration: none;
@@ -288,9 +252,9 @@ const StyledMailLink = styled.p`
 const StyledTelLink = styled.p`
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
-  font-size: 20px;
+  font-size: 18px;
 
   &:hover{
         text-decoration: underline;
@@ -298,6 +262,7 @@ const StyledTelLink = styled.p`
 
   @media screen and (max-width: 767px) {
     margin-left: 0em;
+    align-self: center;
 
     &:hover{
         text-decoration: none;
@@ -360,57 +325,21 @@ const StyledTelLink = styled.p`
 //   margin-top: 0.5em;
 // `;
 
-// const StyledCopyRightContainer = styled.div`
-//   grid-area: copyright;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   text-align: left;
-//   margin-bottom: 1em;
 
-//   @media screen and (max-width: 960px) {
-//     width: 100%;
-//     max-width: 100%;
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: flex-start;
-//     padding-top: 1em;
-    
-//     }
-
-//   @media screen and (max-width: 767px) {
-//     padding-top: 1em;
-//     align-items: center;
-//     }
-// `;
-
-// const StyledCopyRight = styled.div`
-//   line-height: 26px;
-//   color: #000000;
-
-//   @media screen and (max-width: 960px) {
-//     font-size: 12;
-//     margin-left: 5em;
-//     }
-
-//   @media screen and (max-width: 767px) {
-//     margin-left: 0em;
-//     }
-// `;
 
 const Footer = () => {
     return (
       
         <StyledFooter>
 
-<StyledImageandName>
-                
+          <StyledContentsContainer>
 
+            <StyledImageandName>
+                
                     <StyledIdent>        
                         <StyledImg src={ef_logo} alt="the letters e and f merged together" />                  
                     </StyledIdent>
-                    
-                   
+                                      
             </StyledImageandName>      
 
             
@@ -423,7 +352,7 @@ const Footer = () => {
 
                             <StyledContact>                             
                               <StyledMailLink><a href="mailto:hello@ekmanfalck.se">mail@hello@ekmanfalck.se</a></StyledMailLink> 
-                              <StyledTelLink><a href="tel:+46732551434">+46 73 255 14 34</a></StyledTelLink>
+                              <StyledTelLink><a href="tel:+46732551434">+ 46 73 255 14 34</a></StyledTelLink>
                             </StyledContact>
 
                   
@@ -436,7 +365,7 @@ const Footer = () => {
           
           {/* <Icons /> */}
 
-   
+          </StyledContentsContainer>
 
         </StyledFooter>
 
