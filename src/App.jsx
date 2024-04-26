@@ -36,6 +36,27 @@ grid-template-areas:
 "main main main"
 "main main main"
 "footer footer footer";
+
+@media screen and (max-width: 960px) {
+  grid-template-rows: Auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "top top"
+  "main main"
+  "main main"
+  "footer footer";
+          
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-rows: Auto;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "top"
+      "main"
+      "main"
+      "footer";
+    }
 `;
 
 
@@ -51,10 +72,7 @@ function App() {
           <GridContainer >
 
               <Navbar />
-          
-                {/* <MainContainer> */}
-
-              
+                        
                   <Switch>
 
                     <Route exact path="/">

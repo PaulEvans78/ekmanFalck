@@ -138,7 +138,7 @@ return (
 
                   <StyledInfoContainer>
                       
-                  <StyledCardp>Grandisoa. Kebabrulle</StyledCardp>
+                  <StyledCardp>Grandisoa - Hempizza</StyledCardp>
                   <StyledCardp>Director: Fredrik Falck</StyledCardp>
                   <StyledCardp>Agency: xxxxx</StyledCardp>
 

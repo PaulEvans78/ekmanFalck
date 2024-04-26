@@ -10,21 +10,16 @@ import ef_logo from '../assets/ef_logo.png';
 const StyledNav = styled.nav`
     grid-area: top;
     width: 100%;
-    /* max-width: 100vw; */
-    /* min-width: 100vw; */
+    max-width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     z-index: 99;
     display: flex;
-    /* align-self: center; */
     flex-direction: row;
     justify-content: space-between;
-    /* column-gap: 14em; */
-    /* margin-left: 6em;  */
-    /* margin-right: 6em; */
+    align-items: center;
     padding-bottom: 1em;
     padding-left: 1em;
-    /* padding-right: 1em; */
     background-color: whitesmoke;
 
     position: fixed;
@@ -42,8 +37,14 @@ const StyledNav = styled.nav`
         padding-top: 0.5em;
         padding-left: 0em;
   }
-
     `;
+
+
+// const StyledNavContents = styled.div `
+//     width: 90%;
+//     display: flex;
+//     align-self: center;
+//     `;
     
 
 const StyledImageandName = styled.div `
@@ -374,6 +375,8 @@ const links = [
         // NAVBAR
         <StyledNav visible={visible}> 
 
+{/* <StyledNavContents> */}
+
             <StyledImageandName>
                 <Link to="/">
 
@@ -407,12 +410,13 @@ const links = [
 
             {/* hamburger Icon i navbar */}
 
-            <StyledHamburger>
+            {/* <StyledHamburger>
             <div onClick={() => { setOpen(!open); setHamburgerActive(!hamburgerActive); }}>
                 <Hamburger toggled={hamburgerActive} />
                 </div>
-                </StyledHamburger>
+                </StyledHamburger> */}
 
+{/* </StyledNavContents> */}
         </StyledNav>
         
 
