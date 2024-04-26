@@ -1,7 +1,6 @@
-import React, { useState} from 'react';
+import React from 'react';
 import styled from "styled-components";
 import Contents from '../components/CardLandingPage/contents';
-// import PlayerModal from '../components/PlayerModal/player/Player';
 
 
 const StyledHomeContainer = styled.div`
@@ -32,8 +31,6 @@ const Home = () => {
      <StyledHomeContainer>
 
         <Contents/>
-
-        {/* <PlayerModal/> */}
 
     </StyledHomeContainer>
   

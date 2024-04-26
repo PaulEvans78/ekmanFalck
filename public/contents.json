@@ -2,52 +2,28 @@
     "landingpage": [
     
     {   
-        "id":"home1",
+        "id":"1",
         "mainPic": "placeholder.png",
-        "headline": "Grandiosa",
-        "description": "Director.",
-        "cta": "Agency.",
-        "buttonLink": "/PlayerModal"
+        "headline": "",
+        "description": "",
+        "cta": "",
+        "buttonLink": "/filmOne"
     },
     {
-        "id":"home2",
-        "mainPic": "placeholder.png",
-        "headline": "Grandiosa",
-        "description": "Director.",
-        "cta": "Agency.",
-        "buttonLink": "/PlayerModal"
+        "id":"2",
+        "mainPic": "placeholder2.png",
+        "headline": "",
+        "description": "",
+        "cta": "",
+        "buttonLink": "/filmTwo"
     },
     {
-        "id":"home3",
-        "mainPic": "placeholder.png",
-        "headline": "Grandiosa",
-        "description": "Director.",
-        "cta": "Agency.",
-        "buttonLink": "/PlayerModal"
-    },
-    {
-        "id":"home4",
-        "mainPic": "placeholder.png",
-        "headline": "Grandiosa",
-        "description": "Director.",
-        "cta": "Agency.",
-        "buttonLink": "/PlayerModal"
-    },
-    {
-        "id":"home5",
-        "mainPic": "placeholder.png",
-        "headline": "Grandiosa",
-        "description": "Director.",
-        "cta": "Agency.",
-        "buttonLink": "/PlayerModal"
-    },
-    {
-        "id":"home6",
-        "mainPic": "placeholder.png",
-        "headline": "Grandiosa",
-        "description": "Director.",
-        "cta": "Agency.",
-        "buttonLink": "/PlayerModal"
+        "id":"3",
+        "mainPic": "placeholder3.png",
+        "headline": "",
+        "description": "",
+        "cta": "",
+        "buttonLink": "/filmThree"
     }
 ],
 
@@ -170,14 +146,37 @@
     }
 ],
 
-    "playermodal": [
+    "modalhomeone": [
     
     {
         "id":"18",
         "mainVid": "showcase2.mov",
-        "headline": "Grandiosa. Kebab Rulle",
-        "description": "Director: Fredrik Falck. Agency: xxxxx."
+        "title": "Grandiosa:  'Kebab Rulle'",
+        "director": "Director:  Fredrik Falck. ",
+        "agency": "Agency:   xxxxx."
     }
-]
+],
+
+    "modalhometwo": [
+    
+    {
+        "id":"19",
+        "mainVid": "showcase2.mov",
+        "title": "Grandiosa:  'Kebab Rulle'",
+        "director": "Director:  Fredrik Falck. ",
+        "agency": "Agency:   xxxxx."
+    }
+],
+
+    "modalhomethree": [
+    
+    {
+        "id":"20",
+        "mainVid": "showcase2.mov",
+        "title": "Grandiosa:  'Kebab Rulle'",
+        "director": "Director:  Fredrik Falck. ",
+        "agency": "Agency:   xxxxx."
+    }
+]   
 
 }

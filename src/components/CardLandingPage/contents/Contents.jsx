@@ -4,7 +4,7 @@ import Card from '../Card';
 
 
 const Contents = () => {
-    const [contentData, setContentsData] = useState([])
+    const [contentsData, setContentsData] = useState([])
     
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const Contents = () => {
 
     return (
         <>
-            {contentData.map(content => <Card key={content.id} {...content} />)}
+            {contentsData.map(contents => <Card key={contents.id} {...contents} />)}
         </>
 
     )

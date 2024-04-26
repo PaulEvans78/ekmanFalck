@@ -3,10 +3,11 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; 
 import Home from "./pages/Home";
+import FilmOne from "./pages/FilmOne";
 import FilmProduction from "./pages/FilmProduction";
 import ProductionService from "./pages/ProductionService";
 import About from "./pages/About";
-import PlayerModal from './components/PlayerModal/player/Player';
+
 
 
 
@@ -72,11 +73,13 @@ function App() {
                       <About />
                     </Route> 
 
+                    <Route path="/filmOne">
+                      <FilmOne />
+                    </Route>
+                      
                   </Switch>
 
-                   
-                      <PlayerModal/>
-                    
+                  
 
               <Footer />
                     

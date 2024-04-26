@@ -4,7 +4,7 @@ import Digest from '../components/AboutDigest/digest/Digest';
 import AboutPicture from '../components/AboutPictureCard/aboutpicture/AboutPicture';
 import Text from '../components/AboutText/text/Text';
 
-const StyledProductionServiceContainer = styled.div`
+const StyledAboutContainer = styled.div`
 max-width: 100vw;
 display: flex;
 grid-area: main;
@@ -31,19 +31,19 @@ padding-bottom: 4em;
 `;
 
 
-const ProductionService = () => {
+const About = () => {
 
   return (
     
-     <StyledProductionServiceContainer >
+     <StyledAboutContainer >
         <Digest />
         <AboutPicture />
         <Text />
 
-    </StyledProductionServiceContainer >
+    </StyledAboutContainer >
   
   );
 }
 
 
-export default ProductionService;
+export default About;
