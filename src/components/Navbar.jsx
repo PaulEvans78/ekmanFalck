@@ -364,7 +364,7 @@ const links = [
     {
         id: 5,
         to: "/filmOne",
-        text: "test",
+        text: "",
         onClick: () => { setOpen(false); },
         isExternal: false
     },

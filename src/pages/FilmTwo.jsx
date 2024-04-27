@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import Film from '../assets/film1.mp4';
+import Film from '../assets/film2.mp4';
 import { MdOutlineClear } from "react-icons/md";
 import { IconContext } from "react-icons";
 import { Link } from 'react-router-dom';
@@ -122,7 +122,7 @@ const StyledCardp = styled.p`
 
 
 
-function FilmOne() {
+function FilmTwo() {
 
 
 return (
@@ -139,7 +139,7 @@ return (
           </StyledCloseModalButton>
           </Link>
          
-          <StyledFrontCardImg controls autostart autoPlay src={Film} type="film1/.mp4" />
+          <StyledFrontCardImg controls autostart autoPlay src={Film} type="film2/.mp4" />
          
               
           </StyledVideoContainer>
@@ -159,4 +159,4 @@ return (
   );
 }
 
-export default FilmOne;
+export default FilmTwo;
