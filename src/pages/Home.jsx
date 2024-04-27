@@ -15,7 +15,7 @@ gap: 0.5em;
 flex-wrap: wrap;
 padding-top: 2em;
 padding-bottom: 4em;
-margin-top: 6em;
+margin-top: 3em;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -36,7 +36,7 @@ align-self: center;
 
 const StyledText = styled.p`
     text-align: center;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     font-size: 28px;
     font-weight: 600;
 `;

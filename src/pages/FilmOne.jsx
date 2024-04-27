@@ -8,9 +8,7 @@ import { Link } from 'react-router-dom';
 
 const StyledMainContainer = styled.div`
     position: fixed; 
-    /* top:0; */
     display: flex;
-    /* visibility: hidden; */
     flex-direction: column;
     align-items: center;
     justify-content: center;

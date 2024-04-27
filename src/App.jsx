@@ -79,19 +79,19 @@ function App() {
                       <Home />
                     </Route>
 
-                    <Route path="/filmProduction">
+                    <Route path="#/filmProduction">
                       <FilmProduction />
                     </Route>
 
-                     <Route path="/productionService">
+                     <Route path="#/productionService">
                       <ProductionService />
                     </Route>
 
-                    <Route path="/about">
+                    <Route path="#/about">
                       <About />
                     </Route> 
 
-                    <Route path="/filmOne">
+                    <Route path="#/filmOne">
                       <FilmOne />
                     </Route>
                       

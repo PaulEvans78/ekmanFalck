@@ -55,12 +55,19 @@ export const StyledInfoContainer = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #51ff00b8; // #42cf00b8
+    /* background-color: #51ff00b8; // #42cf00b8 */
 
     &:hover{
         opacity: 0;
     }
 `;
+
+export const StyledSecondaryImg = styled.img`
+    width: 100%;
+    position: absolute;
+    align-self: center;
+    object-fit: cover;
+ `; 
 
 export const StyledButton = styled.button`
     position: absolute;

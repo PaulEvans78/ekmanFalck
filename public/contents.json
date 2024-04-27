@@ -4,26 +4,29 @@
     {   
         "id":"1",
         "mainPic": "placeholder.png",
+        "secondaryPic": "placeholderGreen.png",
         "headline": "",
         "description": "",
         "cta": "",
-        "buttonLink": "/filmOne"
+        "buttonLink": "#/filmOne"
     },
     {
         "id":"2",
         "mainPic": "placeholder2.png",
+        "secondaryPic": "placeholderGreen.png",
         "headline": "",
         "description": "",
         "cta": "",
-        "buttonLink": "/filmTwo"
+        "buttonLink": "#/filmTwo"
     },
     {
         "id":"3",
         "mainPic": "placeholder3.png",
+        "secondaryPic": "placeholderGreen.png",
         "headline": "",
         "description": "",
         "cta": "",
-        "buttonLink": "/filmThree"
+        "buttonLink": "#/filmThree"
     }
 ],
 
