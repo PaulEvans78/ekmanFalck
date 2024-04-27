@@ -28,6 +28,7 @@ import {
 
 
 const GridContainer = styled.div`
+overflow-x: hidden;
 min-height: 100%;
 max-width: 100vw;
 display: grid;

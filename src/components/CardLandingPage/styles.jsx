@@ -9,11 +9,11 @@ export const StyledFrontCard = styled.div`
     width: 30%;
     min-width: 0%;
     aspect-ratio: 4 / 3;
-    background-color: #43cf02;
+    /* background-color: #43cf02; */
     font-size: 1.2rem;
     overflow: hidden;
     animation-name: slidedown;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-delay: 0s;
 
     @keyframes slidedown {
@@ -41,6 +41,7 @@ export const StyledFrontCard = styled.div`
 
    
 export const StyledFrontCardImg = styled.img`
+    position: absolute;
     width: 100%;
     height: 100%;
     position: relative;
@@ -60,6 +61,11 @@ export const StyledInfoContainer = styled.div`
 
     &:hover{
         opacity: 0;
+    }
+
+    @media screen and (max-width: 960px) {
+       
+    
     }
 `;
 

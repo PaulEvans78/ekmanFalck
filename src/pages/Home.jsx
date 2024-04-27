@@ -7,6 +7,7 @@ const StyledHomeContainer = styled.div`
 grid-area: main;
 width: 100%;
 max-width: 100%;
+overflow-x: hidden;
 display: flex;
 flex-direction: row;
 justify-items: center;
@@ -31,17 +32,23 @@ margin-top: 3em;
 `;
 
 const StyledIntroduction = styled.div`
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-self: center;
     padding-top: 3em;
-    width: 90%;
+   
     
+    @media screen and (max-width: 960px) {
+      width: 90%;
+      padding-left: 1em;
+      padding-right: 1em;
+  }
 `;
 
 const StyledText = styled.p`
     text-align: center;
-    /* padding-bottom: 1em; */
+    color: black;
     font-size: 28px;
     font-weight: 600;
 `;

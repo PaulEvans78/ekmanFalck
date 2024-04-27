@@ -27,6 +27,9 @@ const StyledNav = styled.nav`
     transition: top 0.6s;
 
     @media screen and (max-width: 960px) {
+        width: 100%;
+        /* min-width:100%;
+        max-width:100%; */
         font-size: 16px;
     }
 
