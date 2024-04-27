@@ -60,13 +60,15 @@ export const StyledInfoContainer = styled.div`
     /* background-color: #51ff00b8; // #42cf00b8 */
 
     &:hover{
+        @media screen and (min-width: 961px) {
         opacity: 0;
     }
+}
 
-    @media screen and (max-width: 960px) {
+    /* @media screen and (max-width: 960px) {
        
     
-    }
+    } */
 `;
 
 export const StyledSecondaryImg = styled.img`
