@@ -23,7 +23,7 @@ export const StyledFrontCard = styled.div`
 
 
 @media screen and (max-width: 960px) {
-    margin-top: 2em; 
+    /* margin-top: 2em;  */
     width: 40%;
     
     @keyframes slidedown {

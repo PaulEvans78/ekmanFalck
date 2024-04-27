@@ -40,7 +40,7 @@ grid-template-areas:
 "footer footer footer";
 
 @media screen and (max-width: 960px) {
-  grid-template-rows: Auto;
+  /* grid-template-rows: repeat(2, 1fr); */
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
   "top top"

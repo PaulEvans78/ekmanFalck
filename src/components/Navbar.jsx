@@ -183,7 +183,7 @@ const StyledNavul = styled.ul`
 
     @media screen and (max-width: 960px) {
         position: fixed;
-        display: flex;
+        display: none; //hamburger menu hidden
         flex-direction: column;
         padding-top: 0em;
         top: 0px;

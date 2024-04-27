@@ -18,7 +18,8 @@ padding-bottom: 4em;
 margin-top: 3em;
 
 @media screen and (max-width: 960px) {
-    margin-top: 6em;
+    /* align-items: center; */
+    margin-top: 2em;
   }
 
   @media screen and (max-width: 767px) {
