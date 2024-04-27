@@ -17,6 +17,10 @@ padding-top: 2em;
 padding-bottom: 4em;
 margin-top: 3em;
 
+@media screen and (max-width: 960px) {
+    margin-top: 6em;
+  }
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 0em;
@@ -26,9 +30,9 @@ margin-top: 3em;
 `;
 
 const StyledIntroduction = styled.div`
-display: flex;
-flex-direction: column;
-align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     padding-top: 3em;
     width: 90%;
     

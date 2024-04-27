@@ -19,7 +19,7 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1em;
-    padding-left: 1em;
+    padding-left: 2em;
     background-color: whitesmoke;
 
     position: fixed;

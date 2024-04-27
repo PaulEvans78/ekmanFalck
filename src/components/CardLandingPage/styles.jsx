@@ -42,6 +42,7 @@ export const StyledFrontCard = styled.div`
    
 export const StyledFrontCardImg = styled.img`
     width: 100%;
+    height: 100%;
     position: relative;
     align-self: center;
     object-fit: cover;
