@@ -125,11 +125,11 @@ const StyledIdent = styled.div `
 
 `;
 
-const StyledName = styled.h1 `
+const StyledName = styled.p `
    
     /* font-family: 'Delicious Handrawn', cursive; */
-    font-size: 52px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 32px;
     letter-spacing: 0em;
     font-weight: bold;
     color: #000000;

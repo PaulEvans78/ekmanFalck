@@ -1,32 +1,46 @@
 {
-    "landingpage": [
+    "hero": [
     
     {   
         "id":"1",
-        "mainPic": "placeholder.png",
-        "secondaryPic": "placeholderGreen.png",
-        "headline": "",
-        "description": "",
+        "mainPic": "hero.png",
+        "headline": "Transforming ideas into powerful, lasting visuals.",
+        "subheader": "Imagine Anything",
         "cta": "",
-        "buttonLink": "#/filmOne"
-    },
+        "buttonLink": ""
+    }
+],
+
+    "case1": [
     {
         "id":"2",
-        "mainPic": "placeholder2.png",
-        "secondaryPic": "placeholderGreen.png",
-        "headline": "",
-        "description": "",
+        "mainPic": "case1.png",
+        "headline": "Grandiosa",
+        "subheader": "TVC",
         "cta": "",
-        "buttonLink": "#/filmTwo"
-    },
+        "buttonLink": "#/filmOne"
+    }
+],
+
+    "case2": [
     {
         "id":"3",
-        "mainPic": "placeholder3.png",
-        "secondaryPic": "placeholderGreen.png",
-        "headline": "",
-        "description": "",
+        "mainPic": "case2.png",
+        "headline": "Lime Travel",
+        "subheader": "Stills & Video",
         "cta": "",
-        "buttonLink": "#/filmThree"
+        "buttonLink": "#/filmTwo"
+    }
+],
+
+    "case3": [
+    {
+        "id":"4",
+        "mainPic": "case2.png",
+        "headline": "Ai generated content",
+        "subheader": "Ai Reel",
+        "cta": "",
+        "buttonLink": "#/filmTwo"
     }
 ],
 

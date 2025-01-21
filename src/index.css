@@ -1,6 +1,6 @@
 :root {
-  font-family: 'Neue Haas Grotesk Display Pro', sans-serif; 
-  font-size: 18px;                                             
+  font-family: "neue-haas-grotesk-display", sans-serif; 
+  /* font-size: 18px;                                              */
   line-height: 1.5;
   font-weight: 400;
 
@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
