@@ -20,7 +20,8 @@ const StyledNav = styled.nav`
     align-items: center;
     padding-bottom: 1em;
     padding-left: 2em;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: #40cf00;
 
     position: fixed;
     top: ${({ visible }) => (visible ? '0' : '-120px')}; /* Adjust according to your navbar height */
@@ -186,7 +187,7 @@ const StyledNavul = styled.ul`
 
     @media screen and (max-width: 960px) {
         position: fixed;
-        display: none; //hamburger menu hidden
+        display: flex; //hamburger menu hidden
         flex-direction: column;
         padding-top: 0em;
         top: 0px;
@@ -194,7 +195,8 @@ const StyledNavul = styled.ul`
         height: 100vh;
         width: 100vw;
         background-color: #40cf00;
-        transform: translateY(1100px);
+        /* transform: translateY(1100px); */
+        transform: ${({ hamburgerActive }) => (hamburgerActive ? 'translateY(0)' : 'translateY(-100%)')};
         -webkit-transform: translateY(1100px); /* Safari */
         -moz-transform: translateY(1100px); /* Firefox */
         transition: 0.5s ease-in-out; 
@@ -286,10 +288,15 @@ const ExternalStyledLink = styled.a`
     
     // HAMBURGER
 
-const StyledHamburger = styled.div`
-    display: none;
+const StyledNavbarContact = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    margin-right: 2em;
+    padding-right: 4em;
 
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 960px) {
     display: flex;
     justify-content: center;
     margin-top: 2em;
@@ -301,9 +308,72 @@ const StyledHamburger = styled.div`
     justify-content: center;
     margin-top: 1em;
     margin-right: 2em;
-}
+} */
 `;
 
+const StyledMailLink = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: -0.75em;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+
+  &:hover{
+        text-decoration: underline;
+    }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0em;
+    align-self: center;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+  }
+`;
+
+const StyledTelLink = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-self: center;
+  font-size: 16px;
+  text-align: right;
+
+  &:hover{
+        text-decoration: underline;
+    }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0em;
+    align-self: center;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+  }
+`;
+
+const Styledp = styled.p`
+  align-self: flex-end;
+  margin-bottom: -0.6em;
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 0%;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0em;
+  }
+
+`;
 
 
 
@@ -413,12 +483,16 @@ const links = [
 
             {/* hamburger Icon i navbar */}
 
-            {/* <StyledHamburger>
-            <div onClick={() => { setOpen(!open); setHamburgerActive(!hamburgerActive); }}>
+             {/* <StyledHamburger> */}
+                <StyledNavbarContact>
+             <Styledp>Sweden | South Africa</Styledp>
+             <StyledMailLink><a href="mailto:hello@ekmanfalck.se">mail@hello@ekmanfalck.se</a></StyledMailLink> 
+             <StyledTelLink><a href="tel:+46732551434">+ 46 73 255 14 34</a></StyledTelLink>
+            {/* <div onClick={() => { setOpen(!open); setHamburgerActive(!hamburgerActive); }}>
                 <Hamburger toggled={hamburgerActive} />
-                </div>
-                </StyledHamburger> */}
-
+                </div> */}
+                {/* </StyledHamburger>  */}
+                </StyledNavbarContact>
 {/* </StyledNavContents> */}
         </StyledNav>
         

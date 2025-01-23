@@ -89,8 +89,9 @@ export const StyledButton = styled.button`
     justify-content: center;
     padding-bottom: 2em;
     border: none;
-    color: #f8f8f8;
-    cursor: pointer;
+    /* color: #f8f8f8; */
+    /* cursor: pointer; */
+
 
     @media screen and (max-width: 960px) {
         padding-bottom: 1em;

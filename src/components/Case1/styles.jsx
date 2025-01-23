@@ -91,6 +91,13 @@ export const StyledButton = styled.button`
     color: #f8f8f8;
     cursor: pointer;
 
+    /* &:hover{
+        @media screen and (min-width: 961px) {
+        background-color: #40cf00;
+        opacity: 70%;
+    }
+} */
+
     @media screen and (max-width: 960px) {
         padding-bottom: 1em;
 }
@@ -119,6 +126,13 @@ export const StyledHeader = styled.h3`
     font-weight: 700;
     font-style: normal;
     text-align: left;
+
+    /* &:hover{
+        @media screen and (min-width: 961px) {
+        color: #40cf00;
+        opacity: 70%;
+    }
+} */
 
     @media screen and (max-width: 960px) {
         font-size: 28px;

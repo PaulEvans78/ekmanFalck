@@ -57,7 +57,7 @@ const StyledFooter = styled.footer`
 `;
 
 const StyledContentsContainer = styled.div`
-    width: 92%;
+    width: 100%;
     height: 160px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -202,7 +202,9 @@ const StyledContactContainer = styled.div`
 const StyledContact = styled.div`
     display: flex;
     flex-direction: column;
-    padding-left: 3em;
+    align-self: flex-end;
+    padding-right: 4em;
+    
 
   @media screen and (max-width: 767px) {
     padding-left: 0em;
@@ -230,10 +232,11 @@ const Styledp = styled.p`
 const StyledMailLink = styled.p`
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  /* align-self: flex-start; */
   margin-bottom: -0.75em;
   font-size: 18px;
   font-weight: 700;
+  text-align: right;
 
   &:hover{
         text-decoration: underline;
@@ -253,9 +256,10 @@ const StyledMailLink = styled.p`
 const StyledTelLink = styled.p`
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  /* align-self: flex-start; */
   justify-self: center;
   font-size: 18px;
+  text-align: right;
 
   &:hover{
         text-decoration: underline;

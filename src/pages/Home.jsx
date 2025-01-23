@@ -17,7 +17,7 @@ justify-content: center;
 /* gap: 0.5em; */
 flex-wrap: wrap;
 /* padding-top: 2em; */
-padding-bottom: 4em;
+/* padding-bottom: 4em; */
 margin-top: -1em;
 
 @media screen and (max-width: 960px) {
