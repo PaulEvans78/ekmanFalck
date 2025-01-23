@@ -23,7 +23,7 @@ export const StyledFrontCard = styled.div`
 
 @media screen and (max-width: 960px) {
     /* margin-top: 2em;  */
-    width: 40%;
+    /* width: 40%; */
     
     @keyframes slidedown {
   0%   {bottom:-1000px;}
@@ -35,6 +35,7 @@ export const StyledFrontCard = styled.div`
     width: 100%;
     margin-top: 1em; 
     margin-bottom: 0em;
+    aspect-ratio: 3 / 4;
 }
 `;
 
@@ -101,6 +102,10 @@ export const StyledButton = styled.button`
     @media screen and (max-width: 960px) {
         padding-bottom: 1em;
 }
+
+@media screen and (max-width: 767px) {
+    padding-left: 2em;
+}
 `;
 
 export const StyledHeaderContainer = styled.div`
@@ -122,7 +127,7 @@ export const StyledHeader = styled.h3`
     margin-right: 1em;
     white-space: pre-wrap;
     color: #ffffff;
-    font-size: 65px;
+    font-size: 62px;
     font-weight: 700;
     font-style: normal;
     text-align: left;
@@ -135,12 +140,22 @@ export const StyledHeader = styled.h3`
 } */
 
     @media screen and (max-width: 960px) {
-        font-size: 28px;
+        font-size: 54px;
 }
 
     @media screen and (max-width: 767px) {
         /* margin-bottom: 0.5em; */
-        font-size: 32px;
+        font-size: 62px;
+}
+
+@media screen and (max-width: 575px) {
+        /* margin-bottom: 0.5em; */
+        font-size: 54px;
+}
+
+@media screen and (max-width: 420px) {
+        /* margin-bottom: 0.5em; */
+        font-size: 30px;
 }
 `;
 
@@ -153,18 +168,29 @@ export const StyledCardp = styled.p`
     font-style: italic;
     /* margin-left: 1.75em; */
     margin-right: 1em;
+    margin-bottom: 0;
     padding-bottom: 1em;
     text-align: left;
     line-height: 0.25em;
 
     @media screen and (max-width: 960px) {
-        font-size: 16px;
+        font-size: 20px;
 }
 
     @media screen and (max-width: 767px) {
         /* margin-bottom: 1em; */
-        font-size: 18px;
+        font-size: 24px;
         line-height: 0em;
+}
+
+@media screen and (max-width: 575px) {
+        /* margin-bottom: 0.5em; */
+        font-size: 20px;
+}
+
+@media screen and (max-width: 420px) {
+        /* margin-bottom: 0.5em; */
+        font-size: 16px;
 }
 `;
 

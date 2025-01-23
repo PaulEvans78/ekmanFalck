@@ -1,31 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import ef_logo from '../assets/ef_logo_footer.png';
-// import { FaImdb, FaInstagram, FaLinkedin  } from 'react-icons/fa';
-// import { IconContext } from "react-icons";
+import { FaInstagram, FaLinkedin  } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 
-// const footerData = [
-//   {
-//       id: 1,
-//       href: "https://www.linkedin.com/in/tobias-reiner-64885645/",
-//       icon: <FaLinkedin />,
-//       des: "LinkedIn"
-//   },
-//   {
-//       id: 2,
-//       href: "https://www.instagram.com/1st_ad_tobias/",
-//       icon: <FaInstagram />,
-//       des: "Instagram"
-//   },
-//   {
-//       id: 3,
-//       href: "https://www.imdb.com/name/nm1639113/?ref_=fn_al_nm_1",
-//       icon: <FaImdb />,
-//       des: "Imdb"
-//   },
+const footerData = [
+  {
+      id: 1,
+      href: "https://www.linkedin.com/company/ekmanfalck/",
+      icon: <FaLinkedin />,
+      des: "LinkedIn"
+  },
+  {
+      id: 2,
+      href: "https://www.instagram.com/ekmanfalck/",
+      icon: <FaInstagram />,
+      des: "Instagram"
+  },
   
-// ];
+];
 
 const StyledFooter = styled.footer`
   grid-area: footer;
@@ -46,13 +40,13 @@ const StyledFooter = styled.footer`
   margin-bottom: 0;
 
   @media screen and (max-width: 960px) {
-    height: 200px;
+    /* height: 200px; */
     padding-left: 0em;
     padding-right: 0em;
   }
   
   @media screen and (max-width: 767px) {
-    height: 450px;
+    /* height: 450px; */
   }
 `;
 
@@ -73,7 +67,7 @@ const StyledContentsContainer = styled.div`
   
     @media screen and (max-width: 767px) {
     width: 100%;
-    height: 450px;
+    height: 500px;
     grid-template-columns: none;
     grid-template-rows: repeat(3, 1fr); 
     grid-template-areas:
@@ -137,38 +131,38 @@ const StyledImg = styled.img`
 `;
 
 
-const StyledCountriesContainer = styled.div`
-  grid-area: countries;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 3em;
-  padding-left: 2em;
+// const StyledCountriesContainer = styled.div`
+//   grid-area: countries;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: center;
+//   padding-bottom: 3em;
+//   padding-left: 2em;
 
-  @media screen and (max-width: 1920px) {
-    padding-right: 0em;
-    }
+//   @media screen and (max-width: 1920px) {
+//     padding-right: 0em;
+//     }
 
-  @media screen and (max-width: 960px) {
-        width: 100%;
-        max-width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center; 
-        padding-right: 0em;
-        padding-bottom: 1em;
-        padding-top: 3em;
-        padding-left: 0em;
-    }
+//   @media screen and (max-width: 960px) {
+//         width: 100%;
+//         max-width: 100%;
+//         justify-content: space-evenly;
+//         align-items: center;
+//         text-align: center; 
+//         padding-right: 0em;
+//         padding-bottom: 1em;
+//         padding-top: 3em;
+//         padding-left: 0em;
+//     }
 
-  @media screen and (max-width: 767px) {
-      flex-direction: column;
-      justify-content: flex-end;
-      padding-bottom: 3em;
-      padding-top: 0em;
-    }
-`;
+//   @media screen and (max-width: 767px) {
+//       flex-direction: column;
+//       justify-content: flex-end;
+//       padding-bottom: 3em;
+//       padding-top: 0em;
+//     }
+// `;
 
 const StyledContactContainer = styled.div`
   grid-area: contact;
@@ -207,7 +201,9 @@ const StyledContact = styled.div`
     
 
   @media screen and (max-width: 767px) {
+    align-self: center;
     padding-left: 0em;
+    padding-right: 0em;
     }
 `;
 
@@ -277,58 +273,61 @@ const StyledTelLink = styled.p`
 `;
 
 
-// const IconContainer = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-evenly;
-//   justify-items:center;
-//   margin-right: 2em;
+const IconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items:center;
+  margin-right: 2em;
 
-//   @media screen and (max-width: 960px) {
-//         /* margin-right: 2em; */
+  @media screen and (max-width: 960px) {
+        /* margin-right: 2em; */
 
-//     }
+    }
 
     
 
-// @media screen and (max-width: 767px) {
-//   margin-right: 1em;
-// }
-// `;
+@media screen and (max-width: 767px) {
+  margin-right: 0em;
+  padding-top: 6em;
+  padding-bottom: 5em;
+  justify-content: center;
+}
+`;
 
 
-// const StyledIcon = styled.a`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 1em 1em 0em 2em;
+const StyledIcon = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0em 0em 0em;
   
-//   &:hover{
-//         text-decoration: underline;
-//     }
+  &:hover{
+        text-decoration: underline;
+    }
 
-//     @media screen and (max-width: 767px) {
-//     margin: 0em 2em 0em 2em;
+    @media screen and (max-width: 767px) {
+    margin: 0em 2em 0em 2em;
 
-//     &:hover{
-//         text-decoration: none;
-//     }
+    &:hover{
+        text-decoration: none;
+    }
     
-//   }
-// `;
+  }
+`;
 
-// const IconDes = styled.p`
-//   display: flex;
-//   flex-direction: column;
-//   align-content: center;
-//   font-family: 'Lexend';
-//   font-size: 12px;
-//   line-height: 24px;
-//   color: #000000;
-//   text-align: center;
-//   margin-top: 0.5em;
-// `;
+const IconDes = styled.p`
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* font-family: 'Lexend'; */
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin-top: 0.5em;
+`;
 
 
 
@@ -349,13 +348,14 @@ const Footer = () => {
 
             
 
-          <StyledCountriesContainer>
+          {/* <StyledCountriesContainer>
             <Styledp>Sweden | South Africa</Styledp>
-          </StyledCountriesContainer>
+          </StyledCountriesContainer> */}
 
                     <StyledContactContainer>
 
-                            <StyledContact>                             
+                            <StyledContact>    
+                            <Styledp>Sweden | South Africa</Styledp>                         
                               <StyledMailLink><a href="mailto:hello@ekmanfalck.se">mail@hello@ekmanfalck.se</a></StyledMailLink> 
                               <StyledTelLink><a href="tel:+46732551434">+ 46 73 255 14 34</a></StyledTelLink>
                             </StyledContact>
@@ -368,7 +368,7 @@ const Footer = () => {
               
 
           
-          {/* <Icons /> */}
+          <Icons />
 
           </StyledContentsContainer>
 
@@ -378,24 +378,24 @@ const Footer = () => {
     );
 }
 
-// const Icons = () => {
+const Icons = () => {
   
-//   return (
-//     <IconContainer> 
+  return (
+    <IconContainer> 
 
-//       <IconContext.Provider value={{ size: "2em"}}>
-//         {footerData.map(Link => (
-//           <StyledIcon href={Link.href} key={Link.id}>
-//             {Link.icon}
+      <IconContext.Provider value={{ size: "2em"}}>
+        {footerData.map(Link => (
+          <StyledIcon href={Link.href} key={Link.id}>
+            {Link.icon}
           
-//             <IconDes>{Link.des}</IconDes>
-//         </StyledIcon>))}
+            <IconDes>{Link.des}</IconDes>
+        </StyledIcon>))}
         
-//           </IconContext.Provider>
+          </IconContext.Provider>
 
-//     </IconContainer>
-//   );
-// }
+    </IconContainer>
+  );
+}
 
  
 

@@ -18,7 +18,7 @@ justify-content: center;
 flex-wrap: wrap;
 /* padding-top: 2em; */
 /* padding-bottom: 4em; */
-margin-top: -1em;
+margin-top: 2em;
 
 @media screen and (max-width: 960px) {
     /* align-items: center; */
@@ -32,6 +32,11 @@ margin-top: -1em;
     padding-bottom: 3em;
     margin-top: 5em;
   }
+
+  @media screen and (max-width: 420px) {
+        /* margin-bottom: 0.5em; */
+        margin-top: 3em;
+}
 `;
 
 const StyledIntroduction = styled.div`
@@ -50,6 +55,25 @@ const StyledIntroduction = styled.div`
       width: 90%;
       padding-left: 1em;
       padding-right: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+  }
+
+  @media screen and (max-width: 767px) {
+      width: 80%;
+      
+  }
+
+  @media screen and (max-width: 575px) {
+      width: 90%;  
+      padding-top: 0em;
+      padding-bottom: 0em;
+  }
+
+  @media screen and (max-width: 420px) {
+      height: 670px;
+      /* padding-top: 3em;
+    padding-bottom: 3em; */
   }
 `;
 
@@ -79,6 +103,18 @@ const StyledText = styled.p`
     font-size: 54px;
     font-weight: 700;
     font-style: normal;
+
+    @media screen and (max-width: 960px) {
+      font-size: 48px;
+  }
+
+  @media screen and (max-width: 767px) {
+      font-size: 40px;
+  }
+
+  @media screen and (max-width: 575px) {
+      font-size: 38px;
+  }
 `;
 
 
