@@ -18,20 +18,25 @@ justify-content: center;
 flex-wrap: wrap;
 /* padding-top: 2em; */
 /* padding-bottom: 4em; */
-margin-top: 0.5em;
+margin-top: -1em;
 
 @media screen and (max-width: 960px) {
     /* align-items: center; */
-    margin-top: 2em;
+    margin-top: 0em;
   }
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 0em;
-    padding-top: 0em;
+    /* padding-top: 0em; */
     padding-bottom: 3em;
-    margin-top: 5em;
+    margin-top: 1em;
   }
+  @media screen and (max-width: 575px) {
+        /* margin-bottom: 0.5em; */
+        margin-top: 3em;
+}
+  
 
   @media screen and (max-width: 420px) {
         /* margin-bottom: 0.5em; */

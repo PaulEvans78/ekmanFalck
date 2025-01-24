@@ -100,7 +100,6 @@ const StyledInfoContainer = styled.div`
 @media screen and (max-width: 575px) {
     flex-direction: column;
 }
-
 `;
 
 

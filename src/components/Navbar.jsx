@@ -13,10 +13,10 @@ const StyledNav = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding-bottom: 1em; */
+  padding-bottom: 0.5em;
   padding-left: 2em;
-  background-color: whitesmoke;
-  /* background-color: #40cf00; */
+  /* background-color: whitesmoke; */
+  background-color: #40cf00;
 
   position: fixed;
   top: ${({ visible }) =>
