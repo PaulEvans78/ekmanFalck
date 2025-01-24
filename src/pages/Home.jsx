@@ -4,6 +4,10 @@ import HeroContents from '../components/Hero/contents';
 import Case1Contents from '../components/Case1/contents';
 import Case2Contents from '../components/Case2/contents';
 import Case3Contents from '../components/Case3/contents';
+import grandiosa_logo from '../assets/grandiosa.png';
+import lime_logo from '../assets/lime.png';
+import bly_logo from '../assets/bly.png';
+import sns_logo from '../assets/sns.png';
 
 const StyledHomeContainer = styled.div`
 grid-area: main;
@@ -90,8 +94,7 @@ const StyledLogoContainer = styled.div`
     align-self: center;
     align-content: center;
     justify-content: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding: 3em 3em 3em 3em;
     background-color: #40cf00;
    
     
@@ -101,6 +104,19 @@ const StyledLogoContainer = styled.div`
       padding-right: 1em;
   }
 `;
+
+const StyledLogosGrid = styled.div`
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+`;
+
+
+const StyledLogos = styled.img`
+display: flex;
+justify-self: center;
+width: 100px;
+`;
+
 
 const StyledText = styled.p`
     text-align: center;
@@ -156,6 +172,27 @@ const Home = () => {
         </StyledIntroduction>
 
         <StyledLogoContainer>
+
+        <StyledLogosGrid>
+            <StyledLogos src={grandiosa_logo} alt="Grandiosa pizza logo" />
+            <StyledLogos src={lime_logo} alt="Lime travel logo" />
+            <StyledLogos src={bly_logo} alt="Bly agency logo" />
+            <StyledLogos src={sns_logo} alt="SNS logo" />
+        </StyledLogosGrid>
+
+        <StyledLogosGrid>
+        <StyledLogos src={grandiosa_logo} alt="Grandiosa pizza logo" />
+            <StyledLogos src={lime_logo} alt="Lime travel logo" />
+            <StyledLogos src={bly_logo} alt="Bly agency logo" />
+            <StyledLogos src={sns_logo} alt="SNS logo" />
+        </StyledLogosGrid>
+        <StyledLogosGrid>
+        <StyledLogos src={grandiosa_logo} alt="Grandiosa pizza logo" />
+            <StyledLogos src={lime_logo} alt="Lime travel logo" />
+            <StyledLogos src={bly_logo} alt="Bly agency logo" />
+            <StyledLogos src={sns_logo} alt="SNS logo" />
+        </StyledLogosGrid>
+
 
         </StyledLogoContainer>
 
