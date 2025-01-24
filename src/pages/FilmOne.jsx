@@ -16,11 +16,12 @@ const StyledMainContainer = styled.div`
     min-width: 100%;
     height: 100%;
     min-height: 100vh;
-    background-color: #272727;
+    background-color: #0a0a0a;
     font-size: 1.2rem;
     overflow: hidden;
     z-index: 100;
     margin: 0;
+    padding-top: 1em;
    
 
 @media screen and (max-width: 960px) {
@@ -34,7 +35,7 @@ const StyledMainContainer = styled.div`
 
 const StyledVideoContainer = styled.div`
     position: relative;
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
 
@@ -87,14 +88,17 @@ const StyledFrontCardImg = styled.video`
 const StyledInfoContainer = styled.div`
   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    width: 80%;
-    padding: 1em;
+    width: 85%;
+    padding: 1em 1em 1em 1em;
 
     @media screen and (max-width: 969px) {
         width: 100%;
-        
+}
+
+@media screen and (max-width: 575px) {
+    flex-direction: column;
 }
 
 `;
@@ -110,13 +114,11 @@ const StyledCardp = styled.p`
     text-align: left;
 
     @media screen and (max-width: 960px) {
-        font-size: 16px;
+        
         padding-left: 1em;
 }
 
-    @media screen and (max-width: 767px) {
-        
-}
+
 `;
 
 

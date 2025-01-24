@@ -13,7 +13,7 @@ const StyledNav = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 1em;
+  /* padding-bottom: 1em; */
   padding-left: 2em;
   background-color: whitesmoke;
   /* background-color: #40cf00; */
@@ -78,8 +78,8 @@ const StyledIdent = styled.div`
 `;
 
 const StyledName = styled.p`
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 34px;
   letter-spacing: 0em;
   font-weight: bold;
   color: #000000;
@@ -104,7 +104,7 @@ const StyledNavbarContact = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-right: 2em;
   padding-right: 4em;
 
@@ -130,7 +130,8 @@ const StyledMailLink = styled.p`
   flex-direction: column;
   align-self: flex-end;
   margin-bottom: -0.75em;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 700;
   text-align: right;
 
@@ -139,7 +140,7 @@ const StyledMailLink = styled.p`
   }
 
   @media screen and (max-width: 767px) {
-    line-height: 16px;
+    line-height: 14px;
 
     &:hover {
       text-decoration: none;
@@ -147,7 +148,7 @@ const StyledMailLink = styled.p`
   }
 
   @media screen and (max-width: 575px) {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
   }
 
@@ -162,7 +163,7 @@ const StyledTelLink = styled.p`
   flex-direction: column;
   align-self: flex-end;
   justify-self: center;
-  font-size: 16px;
+  font-size: 14px;
   text-align: right;
 
   &:hover {
@@ -176,7 +177,7 @@ const StyledTelLink = styled.p`
   }
 
   @media screen and (max-width: 575px) {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
   }
 
@@ -191,7 +192,7 @@ const Styledp = styled.p`
   margin-bottom: -0.6em;
   color: black;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 16px;
 
   @media screen and (max-width: 960px) {
     margin-top: 0%;
@@ -202,7 +203,7 @@ const Styledp = styled.p`
   }
 
   @media screen and (max-width: 575px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @media screen and (max-width: 420px) {

@@ -18,7 +18,7 @@ justify-content: center;
 flex-wrap: wrap;
 /* padding-top: 2em; */
 /* padding-bottom: 4em; */
-margin-top: 2em;
+margin-top: 0.5em;
 
 @media screen and (max-width: 960px) {
     /* align-items: center; */
