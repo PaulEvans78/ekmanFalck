@@ -35,7 +35,6 @@ display: grid;
 grid-template-rows: 7rem repeat(2, 1fr) 7rem;
 grid-template-columns: repeat(3, 1fr);
 grid-template-areas:
-"top top top"
 "main main main"
 "main main main"
 "footer footer footer";

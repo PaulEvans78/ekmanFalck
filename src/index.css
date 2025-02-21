@@ -1,32 +1,34 @@
 :root {
-  font-family: "neue-haas-grotesk-display", sans-serif; 
-  /* font-size: 18px;                                              */
-  line-height: 1.5;
-  font-weight: 400;
 
+  --main-font-color: #FFFFFF;
+  /* --main-font-color: #2D2D2D; */
+  
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
   background-color: whitesmoke;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
-  font-weight: 600;
-  color: #000000;
+  font-family: "helvetica Neue", sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
   text-decoration: inherit;
 }
-/* a:hover {
+a:hover {
   color: #59cf23;
-} */
+}
 
 body {
   margin: 0 auto;
-  /* padding-left: 2em; */
-  /* padding-right: 2em; */
   max-width: 100vw;
   min-width: 100vw;
   min-height: 100vh;
@@ -34,43 +36,43 @@ body {
 }
 
 h1 {
-  font-size: 2.2em;
-  line-height: 1.1;
+  font-family: "helvetica Neue", sans-serif;
+  font-size: 100px;
+  line-height: 88px;
+  letter-spacing: -2%;
+  font-weight: bold;
 }
 
-/* .favicon {
-  border-radius: 50%;
-  width: 50px;
-} */
-
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+  font-family: "helvetica Neue", sans-serif;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: -2%;
+  font-weight: bold;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+h3 {
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: -4%;
+  font-weight: light;
+}
+
+h4 {
+  font-family: "helvetica Neue", sans-serif;
+  font-size: 25px;
+  line-height: 33px;
+  letter-spacing: -2%;
+  font-weight: bold;
+}
+
+p {
+  font-family: "helvetica Neue", sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -4%;
+  font-weight: light;
+}
+
+
