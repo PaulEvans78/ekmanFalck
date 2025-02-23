@@ -36,7 +36,7 @@ const StyledNav = styled.nav`
 
 const StyledEFLogo = styled.img`
 width: 51px;
-height: 63;
+height: 63px;
   /* @media screen and (max-width: 960px) {
     margin-top: 1.5em;
   }

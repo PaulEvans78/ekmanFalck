@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Hero from '../components/Hero';
 import Case1 from '../components/Case1';
 import Case2 from '../components/Case2';
-import Case3Contents from '../components/Case3/contents';
+import Case3 from '../components/Case3';
 
 const StyledHomeContainer = styled.div`
 grid-area: main;
@@ -176,7 +176,7 @@ const Home = () => {
           </StyledTextContainer>
         </StyledCopy>
 
-        <Case3Contents/>
+        <Case3/>
 
         
 

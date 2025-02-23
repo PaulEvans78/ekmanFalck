@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-a {
+/* a {
   font-family: "helvetica Neue", sans-serif;
   color: #FFFFFF;
   font-size: 15px;
@@ -25,7 +25,7 @@ a {
 }
 a:hover {
   color: #59cf23;
-}
+} */
 
 body {
   margin: 0 auto;
@@ -53,6 +53,7 @@ h2 {
 }
 
 h3 {
+  font-family: "helvetica Neue", sans-serif;
   font-size: 25px;
   line-height: 31px;
   letter-spacing: -4%;

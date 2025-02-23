@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Herofilm from "../assets/Grandiosa.mp4";
-import ServiceProduction from "../assets/placeholder.png";
+import CaseImage from "../assets/placeholder.png";
 
 
 const StyledCaseContainer = styled.div`
-  position: relative;
+  /* position: relative; */
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -28,7 +28,7 @@ const StyledCaseContainer = styled.div`
 
 
 const StyledGridContainer = styled.div`
-
+/* position: relative; */
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
@@ -50,6 +50,7 @@ width: 200%;
 const StyledImg = styled.img`
 width: 100%;
   aspect-ratio: 4/4;
+  z-index: 20;
 `;
 
 const StyledInfoContainer = styled.div`
@@ -64,6 +65,7 @@ const StyledInfoContainer = styled.div`
   color: var(--main-font-color);
   background-color: #02020230;
   /* padding-bottom: 16em; */
+  /* z-index: 100; */
 `;
 
 // const StyledContainer = styled.div`
@@ -71,7 +73,7 @@ const StyledInfoContainer = styled.div`
 // `;
 
 const StyledH4 = styled.h4`
-/* align-self: flex-start; */
+
 `;
 
 
@@ -84,20 +86,23 @@ const Hero = () => {
     <StyledCaseContainer>
     
       <StyledGridContainer>
+
      <StyledContentContainer>
      <StyledImg
-        src={ServiceProduction}
+        src={CaseImage}
         alt="A commercial for Grandiosa"
       />
+
         <StyledInfoContainer>
-            {/* <StyledContainer> */}
+            
           <StyledH4>
           Smart solutions,
           seamless integration.
           </StyledH4>
 
-          {/* </StyledContainer> */}
+          
         </StyledInfoContainer>
+
         </StyledContentContainer>
 
         <StyledContentContainer>

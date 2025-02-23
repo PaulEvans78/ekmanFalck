@@ -3,12 +3,7 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"; 
 import Home from "./pages/Home";
-import FilmOne from "./pages/FilmOne";
-import FilmTwo from "./pages/FilmTwo";
-import FilmThree from "./pages/FilmThree";
-import FilmProduction from "./pages/FilmProduction";
-import ProductionService from "./pages/ProductionService";
-import About from "./pages/About";
+
 
 
 
@@ -81,29 +76,6 @@ function App() {
                       <Home />
                     </Route>
 
-                    <Route path="/filmProduction">
-                      <FilmProduction />
-                    </Route>
-
-                     <Route path="/productionService">
-                      <ProductionService />
-                    </Route>
-
-                    <Route path="/about">
-                      <About />
-                    </Route> 
-
-                    <Route path="/filmOne">
-                      <FilmOne />
-                    </Route>
-
-                    <Route path="/filmTwo">
-                      <FilmTwo />
-                    </Route>
-
-                    <Route path="/filmThree">
-                      <FilmThree />
-                    </Route>
                       
                   </Switch>
 

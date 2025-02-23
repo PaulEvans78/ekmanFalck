@@ -92,7 +92,7 @@ const StyledButton = styled.button`
   height: 48px;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 0.5em;
+  /* padding-bottom: 0.5em; */
   background-color: #272626;
   border-radius: 48px;
   display: flex;
@@ -102,8 +102,17 @@ const StyledButton = styled.button`
   border: none;
 `;
 
-const StyledMailLink = styled.p`
+const StyledMailLink = styled.a`
   color: var(--main-font-color);
+  font-family: "helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+
+  a:hover {
+  color: #59cf23;
+}
+
 `;
 
 const Hero = () => {
