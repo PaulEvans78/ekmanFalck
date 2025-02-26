@@ -44,8 +44,24 @@ h1 {
   margin: 0;
   padding: 0;
 
-  @media screen and (max-width: 1024px) {
+  /* @media screen and (max-width: 1728px) {
+    font-size: clamp(150px, 232px, 275px);
+  line-height: clamp(120px, 190px, 210px);
+} */
+
+  @media screen and (max-width: 1728px) {
     font-size: 232px;
+  line-height: 190px;
+}
+
+/* @media screen and (max-width: 1500px) {
+  font-size: 150px;
+line-height: 120px;
+letter-spacing: -4%;
+} */
+
+@media screen and (max-width: 1024px) {
+  font-size: 232px;
   line-height: 190px;
 }
 

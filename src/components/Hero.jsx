@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Herofilm from "../assets/Grandiosa.mp4";
+import ArrowIcon from "../assets/arrow.png";
 // import HeroHeader from "../assets/logoTextFull.avif";
 // import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -13,7 +14,7 @@ const StyledHeroContainer = styled.div`
   min-width: 0%;
   overflow: hidden;
 
-   @media screen and (max-width: 1024px) {
+   @media screen and (max-width: 1280px) {
     aspect-ratio: 3 / 4;
 }
 
@@ -34,7 +35,7 @@ const StyledHeroContainer = styled.div`
 const StyledHeroVideo = styled.video`
   width: 100%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     width: 250%;
 }
 
@@ -66,7 +67,16 @@ const StyledH1Container = styled.div`
   flex-direction: column;
   justify-content: center;
   border: none;
+  padding-top: 20em;
+
+
+  /* @media screen and (max-width: 1500px) {
+    padding-top: 18em;
+}
+
+@media screen and (max-width: 1024px) {
   padding-top: 18em;
+} */
 
   @media screen and (max-width: 390px) {
     justify-content: flex-end;
@@ -99,7 +109,12 @@ const StyledInfoContainer = styled.div`
   color: var(--main-font-color);
   padding: 24px;
 
-  @media screen and (max-width: 1024px) {
+
+  @media screen and (max-width: 1500px) {
+   padding-bottom: 0;
+}
+
+  @media screen and (max-width: 1280px) {
     justify-content: flex-start;
   align-items: flex-start;
   justify-self: flex-start;
@@ -120,7 +135,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     width: 70%;
 }
 
@@ -144,6 +159,14 @@ font-family: "helvetica Neue", sans-serif;
   margin: 0;
 align-self: flex-start;
 
+@media screen and (max-width: 1500px) {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 1280px) {
+  font-size: 50px;
+}
+
 @media screen and (max-width: 767px) {
   font-size: 28px;
 }
@@ -153,10 +176,37 @@ align-self: flex-start;
 }
 `;
 
-
-
 const StyledHeroDigest = styled.p`
   width: 78%;
+  font-family: "helvetica Neue", sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -4%;
+  font-weight: light;
+
+  @media screen and (max-width: 1500px) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -4%;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: -4%;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -4%;
+  }
+
+  @media screen and (max-width: 390px) {
+     font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -4%;
+  }
 `;
 
 const StyledMailLink = styled.p`
@@ -193,10 +243,14 @@ const StyledButton = styled.button`
 }
 `;
 
-// const StyledIcon = styled.div`
-// display: flex;
-//  justify-content: center; 
-// `;
+const StyledIcon = styled.div`
+display: flex;
+ justify-content: center; 
+`;
+
+const StyledImg = styled.img`
+padding-top: 0.15em;
+`;
 
 // const StyledMailLink = styled.p`
 //   font-family: "helvetica Neue", sans-serif;
@@ -236,9 +290,12 @@ const Hero = () => {
           
             <StyledMailLink>
               Start Today 
-              {/* <StyledIcon>
-              <FaArrowRightLong />
-              </StyledIcon> */}
+             <StyledIcon>
+               <StyledImg
+        src={ArrowIcon}
+        alt="A arrow icon for next"
+      /> 
+              </StyledIcon>
             </StyledMailLink>
           </StyledButton>
           </a>

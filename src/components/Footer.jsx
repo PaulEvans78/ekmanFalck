@@ -11,8 +11,6 @@ const StyledFooter = styled.footer`
   background-color: whitesmoke;
   width: 100%;
   max-width: 100%;
-  /* min-height: 100%; */
-  /* height: 160px; */
   z-index: 50;
   bottom: 0;
   font-size: 14px;
@@ -27,7 +25,7 @@ const StyledFooter = styled.footer`
   }
   
   @media screen and (max-width: 767px) {
-    /* height: 450px; */
+    /* height: 10px; */
   }
 `;
 
@@ -35,10 +33,10 @@ const StyledContentsContainer = styled.div`
     width: 100%;
     /* height: 160px; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 10% 45% 45%;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "logo countries contact";
+    "logo copyright contact";
     align-self: center;
     /* background-color: #40cf00; */
 
@@ -48,13 +46,12 @@ const StyledContentsContainer = styled.div`
   
     @media screen and (max-width: 767px) {
     width: 100%;
-    height: 500px;
-    grid-template-columns: none;
-    grid-template-rows: repeat(3, 1fr); 
+    /* height: 500px; */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 1fr); 
     grid-template-areas:
-    "logo"
-    "countries"
-    "contact";
+    "logo contact"
+    "copyright copyright";
   }
 `;
 
@@ -63,21 +60,6 @@ const StyledImageandName = styled.div `
         display: flex;
         flex-direction: columns;
         width: 100%;
-        /* height: 100%; */
-
-    /* @media screen and (max-width: 960px) {
-        width: 100%;
-        max-width: 100%;
-        
-        padding-left: 3em;
-  }
-
-  @media screen and (max-width: 767px) {
-        width: 100%;
-        max-width: 100%;
-      
-        padding-left: 0em;
-  } */
 `;
 
 
@@ -100,12 +82,10 @@ const StyledImgContainer = styled.div `
       margin-right: 3em;
     }
 
-    /* @media screen and (max-width: 767px) {
-        width: 100%;
-        justify-content: center;
-        padding-top: 4em;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 0em;
         
-    } */
+    }
 
 `;
 
@@ -128,26 +108,12 @@ const StyledContactContainer = styled.div`
   justify-content: center;
   
 
-  @media screen and (max-width: 1920px) {
+  /* @media screen and (max-width: 1920px) {
     padding-right: 0em;
-    }
-
-  @media screen and (max-width: 960px) {
-        /* width: 100%;
-        max-width: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center; 
-        padding-right: 3em;
-        padding-bottom: 1em;
-        padding-top: 3em;
-        padding-left: 0em; */
-    }
+    } */
 
   /* @media screen and (max-width: 767px) {
-      height: 80px;
-      flex-direction: column;
-      padding-top: 0em;
+    align-content: flex-end;
     } */
 `;
 
@@ -164,31 +130,28 @@ const StyledContact = styled.div`
     
 
   @media screen and (max-width: 767px) {
-    align-self: center;
+    align-self: flex-end;
     padding-left: 0em;
     padding-right: 0em;
+    margin-top: 2em
     }
 `;
 
 
-
-// const Styledp = styled.p`
-//   margin-bottom: -0.25em;
-//   color: black;
-//   font-weight: 800;
-//   font-size: 24px;
-
-
-
-// `;
-
 const StyledCopyRightContainer = styled.div`
+grid-area: copyright;
 width: 50%;
 align-content: flex-end;
 justify-items: flex-start;
 
 @media screen and (max-width: 960px) {
   width: 70%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: 80px;
+    justify-items: center;
   }
 `;
 
@@ -259,12 +222,12 @@ const Footer = () => {
                     <StyledImgContainer onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>        
                         <StyledImg src={logo} alt="The letters E & F for Ekman and Falck." />                  
                     </StyledImgContainer>
-                    <StyledCopyRightContainer>
-                    <StyledCopyRight>© Ekman&Falck 2025</StyledCopyRight>
-                    </StyledCopyRightContainer>
+                    
             </StyledImageandName>      
 
-            
+            <StyledCopyRightContainer>
+                    <StyledCopyRight>© Ekman&Falck 2025</StyledCopyRight>
+                    </StyledCopyRightContainer>
 
          
                     <StyledContactContainer>

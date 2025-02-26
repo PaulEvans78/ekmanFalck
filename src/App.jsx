@@ -47,7 +47,6 @@ grid-template-areas:
       grid-template-rows: Auto;
       grid-template-columns: 1fr;
       grid-template-areas:
-      "top"
       "main"
       "main"
       "footer";
