@@ -31,48 +31,17 @@ const StyledNav = styled.nav`
 
   @media screen and (max-width: 390px) {
     padding-left: 20px;
-}
+  }
 `;
 
 const StyledEFLogo = styled.img`
-width: 51px;
-height: 63px;
-  /* @media screen and (max-width: 960px) {
-    margin-top: 1.5em;
-  }
-
-  @media screen and (max-width: 767px) {
-    margin-top: 1em;
-  } */
+  width: 51px;
+  height: 63px;
 `;
 
 const Navbar = () => {
-  // const location = useLocation();
-  // const [visible, setVisible] = useState(true);
-  // const [activePage, setActivePage] = useState(location.pathname);
-  // const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
-
-  // useEffect(() => {
-  //   setActivePage(location.pathname);
-
-  //   const handleScroll = () => {
-  //     const currentScrollPos = window.pageYOffset;
-  //     setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-  //     setPrevScrollPos(currentScrollPos);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, [location.pathname, prevScrollPos]);
-
-
-
-
-
   return (
-    // <StyledNav visible={visible}>
-      <StyledNav>
+    <StyledNav>
       <Link to="/">
         <StyledEFLogo src={logo} alt="The letters E & F for Ekman and Falck." />
       </Link>

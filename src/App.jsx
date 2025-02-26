@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer"; 
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
-
-
-
-
 
 // import {
 
@@ -18,75 +14,54 @@ import {
   HashRouter,
   // BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
 } from "react-router-dom";
 
-
 const GridContainer = styled.div`
-overflow-x: hidden;
-min-height: 100%;
-max-width: 100vw;
-display: grid;
-grid-template-rows: repeat(2, 1fr) 7rem;
-grid-template-columns: repeat(3, 1fr);
-grid-template-areas:
-"main main main"
-"main main main"
-"footer footer footer";
-
-@media screen and (max-width: 960px) {
-  grid-template-columns: repeat(2, 1fr);
+  overflow-x: hidden;
+  min-height: 100%;
+  max-width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) 7rem;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-  "main main"
-  "main main"
-  "footer footer";
-          
-    }
+    "main main main"
+    "main main main"
+    "footer footer footer";
 
-    @media screen and (max-width: 767px) {
-      grid-template-rows: Auto;
-      grid-template-columns: 1fr;
-      grid-template-areas:
+  @media screen and (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "main main"
+      "main main"
+      "footer footer";
+  }
+
+  @media screen and (max-width: 767px) {
+    grid-template-rows: Auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
       "main"
       "main"
       "footer";
-    }
+  }
 `;
 
-
-
 function App() {
-  
-  
   return (
     <HashRouter>
-      
-        
+      <GridContainer>
+        <Navbar />
 
-          <GridContainer >
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
 
-              <Navbar />
-                        
-                  <Switch>
-
-                    <Route exact path="/">
-                      <Home />
-                    </Route>
-
-                      
-                  </Switch>
-
-                  
-
-              <Footer />
-                    
-          </GridContainer>
-          
-      
-          
-      
-          
-      </HashRouter>
+        <Footer />
+      </GridContainer>
+    </HashRouter>
   );
 }
 
