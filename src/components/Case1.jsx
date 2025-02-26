@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Herofilm from "../assets/Grandiosa.mp4";
+import Casefilm from "../assets/Grandiosa.mp4";
 import CaseImage from "../assets/placeholder.png";
 
 
@@ -32,6 +32,12 @@ const StyledGridContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+ 
+}
 `;
 
 const StyledContentContainer = styled.div`
@@ -41,31 +47,44 @@ aspect-ratio: 4/4;
 overflow: hidden;
 `;
 
-const StyledHeroVideo = styled.video`
+const StyledCaseVideo = styled.video`
+position: relative;
 width: 200%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  z-index: 1;
 `;
 
 const StyledImg = styled.img`
+position: relative;
 width: 100%;
   aspect-ratio: 4/4;
-  z-index: 20;
+  z-index: 1;
 `;
 
 const StyledInfoContainer = styled.div`
   position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 100%;
+  padding: 0em 12em 0em 12em;
   /* aspect-ratio: 4/4; */
   color: var(--main-font-color);
   background-color: #02020230;
   /* padding-bottom: 16em; */
-  /* z-index: 100; */
+  z-index: 10;
+
+  @media screen and (max-width: 767px) {
+    padding: 0em 4em 0em 4em;
+}
+
+@media screen and (max-width: 390px) {
+    padding: 0em 1em 0em 1em;
+}
 `;
 
 // const StyledContainer = styled.div`
@@ -73,7 +92,7 @@ const StyledInfoContainer = styled.div`
 // `;
 
 const StyledH4 = styled.h4`
-
+text-align: center;
 `;
 
 
@@ -81,7 +100,7 @@ const StyledH4 = styled.h4`
 
 
 
-const Hero = () => {
+const Case1 = () => {
   return (
     <StyledCaseContainer>
     
@@ -106,8 +125,8 @@ const Hero = () => {
         </StyledContentContainer>
 
         <StyledContentContainer>
-        <StyledHeroVideo
-        src={Herofilm}
+        <StyledCaseVideo
+        src={Casefilm}
         autoPlay
         loop
         muted
@@ -130,4 +149,4 @@ from Sweden to South Africa.
   );
 };
 
-export default Hero;
+export default Case1;

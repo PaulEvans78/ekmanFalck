@@ -89,17 +89,23 @@ const StyledImgContainer = styled.div `
     width: 20%;
     padding-left: 24px;
     text-align: left;
+    cursor: pointer;
     
+    @media screen and (max-width: 1024px) {
+      margin-right: 2em;
+ 
+}
+
     @media screen and (max-width: 960px) {
-      padding-left: 0em;
+      margin-right: 3em;
     }
 
-    @media screen and (max-width: 767px) {
+    /* @media screen and (max-width: 767px) {
         width: 100%;
         justify-content: center;
         padding-top: 4em;
-        /* align-content: center; */
-    }
+        
+    } */
 
 `;
 
@@ -127,7 +133,7 @@ const StyledContactContainer = styled.div`
     }
 
   @media screen and (max-width: 960px) {
-        width: 100%;
+        /* width: 100%;
         max-width: 100%;
         justify-content: space-evenly;
         align-items: center;
@@ -135,14 +141,14 @@ const StyledContactContainer = styled.div`
         padding-right: 3em;
         padding-bottom: 1em;
         padding-top: 3em;
-        padding-left: 0em;
+        padding-left: 0em; */
     }
 
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) {
       height: 80px;
       flex-direction: column;
       padding-top: 0em;
-    }
+    } */
 `;
 
 const StyledContact = styled.div`
@@ -180,6 +186,10 @@ const StyledCopyRightContainer = styled.div`
 width: 50%;
 align-content: flex-end;
 justify-items: flex-start;
+
+@media screen and (max-width: 960px) {
+  width: 70%;
+  }
 `;
 
 const StyledCopyRight = styled.p`
@@ -209,18 +219,12 @@ font-family: "helvetica Neue", sans-serif;
   letter-spacing: -4%;
   font-weight: light;
   text-decoration: none;
-  /* display: flex;
-  flex-direction: column;
-  margin-bottom: -0.75em;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: right; */
 
   &:hover{
     color: #59cf23;
     }
 
-  @media screen and (max-width: 767px) {
+  /* @media screen and (max-width: 767px) {
     margin-left: 0em;
     align-self: center;
 
@@ -228,7 +232,7 @@ font-family: "helvetica Neue", sans-serif;
         text-decoration: none;
     }
 
-  }
+  } */
 `;
 
 
@@ -252,7 +256,7 @@ const Footer = () => {
 
             <StyledImageandName>
                 
-                    <StyledImgContainer>        
+                    <StyledImgContainer onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>        
                         <StyledImg src={logo} alt="The letters E & F for Ekman and Falck." />                  
                     </StyledImgContainer>
                     <StyledCopyRightContainer>

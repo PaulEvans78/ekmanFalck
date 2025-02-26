@@ -30,6 +30,38 @@ const StyledGridContainer = styled.div`
   display: grid;
   grid-template-columns: 34% 34% 34%;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 50% 50%;
+
+
+    & > :nth-child(1) {
+      display: none;
+    }
+
+    & > :nth-child(2),
+    & > :nth-child(3) {
+      display: flex;
+    }
+ 
+}
+
+@media screen and (max-width: 767px) {
+    grid-template-columns: 100%;
+
+
+    & > :nth-child(1) {
+      display: none;
+    }
+
+    & > :nth-child(2) {
+      display: flex;
+    }
+
+    & > :nth-child(3) {
+      display: none;
+    }
+}
 `;
 
 const StyledContentContainer = styled.div`
@@ -40,13 +72,17 @@ overflow: hidden;
 `;
 
 const StyledCaseVideo = styled.video`
+position: relative;
   width: 250%;
   aspect-ratio: 16/9;
+  z-index: 1;
 `;
 
 const StyledImg = styled.img`
+position: relative;
 width: 100%;
   aspect-ratio: 3/4;
+  z-index: 1;
  
 `;
 
@@ -63,28 +99,30 @@ width: 100%;
 
 const StyledInfoContainer = styled.div`
 position: absolute;
+top: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   height: 100%;
   color: var(--main-font-color);
   background-color: #02020230;
-  padding-bottom: 16em;
+  /* padding-bottom: 16em; */
+  z-index: 10;
 `;
 
-const StyledContainer = styled.div`
-  width: 50%;  
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 6em;
-  
-`;
+// const StyledContainer = styled.div`
+//   width: 50%;  
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+//   flex-direction: column;
+// `;
 
-const StyledH4 = styled.h4`
-align-self: center;
+const StyledH5 = styled.h5`
+text-align: center;
+/* align-self: center; */
 `;
 
 
@@ -107,10 +145,11 @@ const Case3 = () => {
      
 
         <StyledInfoContainer>
-            <StyledContainer>
-            <StyledH4>Intelligent by design </StyledH4>
+            {/* <StyledContainer> */}
+            <StyledH5>Where intelligence,
+            meets innovation. </StyledH5>
 
-          </StyledContainer>
+          {/* </StyledContainer> */}
         </StyledInfoContainer>
 
         </StyledContentContainer>
@@ -130,10 +169,10 @@ const Case3 = () => {
      
 
         <StyledInfoContainer>
-            <StyledContainer>
-            <StyledH4>Intelligent by design </StyledH4>
+            {/* <StyledContainer> */}
+            <StyledH5>AI solutions, human insights </StyledH5>
 
-          </StyledContainer>
+          {/* </StyledContainer> */}
         </StyledInfoContainer>
 
         </StyledContentContainer>
@@ -149,11 +188,11 @@ const Case3 = () => {
      
 
         <StyledInfoContainer>
-            <StyledContainer>
-          <StyledH4>Intelligent by design </StyledH4>
+            {/* <StyledContainer> */}
+          <StyledH5>Beyond conventional thinking </StyledH5>
       
 
-          </StyledContainer>
+          {/* </StyledContainer> */}
         </StyledInfoContainer>
 
         </StyledContentContainer>

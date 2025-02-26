@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../assets/logoTextV2.avif";
 
 const StyledNav = styled.nav`
@@ -17,11 +17,7 @@ const StyledNav = styled.nav`
   padding-bottom: 0.5em;
   padding-left: 24px;
   padding-top: 20px;
-
-  position: fixed;
-  top: ${({ visible }) =>
-    visible ? "0" : "-120px"}; /* Adjust according to your navbar height */
-  transition: top 0.6s;
+  position: absolute;
 
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -32,6 +28,10 @@ const StyledNav = styled.nav`
   @media screen and (max-width: 767px) {
     padding-left: 2em;
   }
+
+  @media screen and (max-width: 390px) {
+    padding-left: 20px;
+}
 `;
 
 const StyledEFLogo = styled.img`
@@ -47,31 +47,32 @@ height: 63px;
 `;
 
 const Navbar = () => {
-  const location = useLocation();
-  const [visible, setVisible] = useState(true);
-  const [activePage, setActivePage] = useState(location.pathname);
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  // const location = useLocation();
+  // const [visible, setVisible] = useState(true);
+  // const [activePage, setActivePage] = useState(location.pathname);
+  // const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
 
-  useEffect(() => {
-    setActivePage(location.pathname);
+  // useEffect(() => {
+  //   setActivePage(location.pathname);
 
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-      setPrevScrollPos(currentScrollPos);
-    };
+  //   const handleScroll = () => {
+  //     const currentScrollPos = window.pageYOffset;
+  //     setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+  //     setPrevScrollPos(currentScrollPos);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [location.pathname, prevScrollPos]);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [location.pathname, prevScrollPos]);
 
 
 
 
 
   return (
-    <StyledNav visible={visible}>
+    // <StyledNav visible={visible}>
+      <StyledNav>
       <Link to="/">
         <StyledEFLogo src={logo} alt="The letters E & F for Ekman and Falck." />
       </Link>
