@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Hero from "../components/Hero";
 import Case1 from "../components/Case1";
+import Case1carousel from "../components/Case1carousel";
 import Case2 from "../components/Case2";
 import Case3 from "../components/Case3";
 
@@ -20,24 +21,12 @@ const StyledCopy = styled.div`
   flex-direction: row;
   align-content: space-between;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
 
   @media screen and (max-width: 390px) {
     height: 400px;
-  }
-`;
-
-const StyledCopyReversed = styled.div`
-  width: 100%;
-  height: 435px;
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-
-  @media screen and (max-width: 960px) {
-    flex-direction: column-reverse;
   }
 `;
 
@@ -57,25 +46,8 @@ const StyledH2Container = styled.div`
   }
 `;
 
-const StyledH2ContainerReverse = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: right;
+const StyledH2 = styled.h2`
   width: 50%;
-  padding-right: 100px;
-
-  @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding-left: 52px;
-  }
-
-  @media screen and (max-width: 390px) {
-    padding-left: 20px;
-  }
 `;
 
 const StyledTextContainer = styled.div`
@@ -84,8 +56,9 @@ const StyledTextContainer = styled.div`
   align-items: center;
   width: 50%;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1024px) {
     width: 80%;
+    justify-content: flex-start;
     padding-left: 52px;
   }
 
@@ -94,34 +67,49 @@ const StyledTextContainer = styled.div`
   }
 `;
 
-const StyledH2 = styled.h2`
-  width: 50%;
-`;
-
-const StyledH2Reverse = styled.h2`
-  width: 100%;
-  text-align: right;
-  white-space: normal;
-  word-break: break-word;
-
-  @media screen and (max-width: 960px) {
-    text-align: left;
-  }
-`;
-
 const StyledText = styled.p`
   text-align: right;
   padding-right: 24px;
 
-  @media screen and (max-width: 960px) {
-    padding-right: 0px;
+  @media screen and (max-width: 1024px) {
     text-align: left;
+    padding-right: 0px;
   }
 `;
 
-const StyledTextReversed = styled.p`
-  text-align: right;
+const StyledCopyReversed = styled.div`
+  width: 100%;
+  height: 435px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column-reverse;
+  }
+`;
+
+const StyledTextContainerAlignRight = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    justify-content: flex-start;
+    padding-left: 52px;
+  }
+
+  @media screen and (max-width: 390px) {
+    padding-left: 20px;
+  }
+`;
+
+const StyledTextAlignRight = styled.p`
+  text-align: left;
   padding-right: 24px;
+  padding-left: 24px;
 
   @media screen and (max-width: 1024px) {
     text-align: left;
@@ -133,6 +121,35 @@ const StyledTextReversed = styled.p`
     padding-left: 0px;
     text-align: left;
     margin-bottom: 3em;
+  }
+`;
+
+const StyledH2ContainerAlignRight = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  width: 50%;
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    padding-left: 52px;
+  }
+
+  @media screen and (max-width: 390px) {
+    padding-left: 20px;
+  }
+`;
+
+const StyledH2AlignRight = styled.h2`
+  text-align: right;
+
+  @media screen and (max-width: 1024px) {
+    text-align: left;
   }
 `;
 
@@ -154,21 +171,20 @@ const Home = () => {
       </StyledCopy>
 
       <Case1 />
+      <Case1carousel />
 
       <StyledCopyReversed>
-        <StyledTextContainer>
-          <StyledTextReversed>
+        <StyledTextContainerAlignRight>
+          <StyledTextAlignRight>
             Custom AI solutions that transform your creative workflow.
-          </StyledTextReversed>
-        </StyledTextContainer>
+          </StyledTextAlignRight>
+        </StyledTextContainerAlignRight>
 
-        <StyledH2ContainerReverse>
-          <StyledH2Reverse>
-            Itelligence <br />
-            by <br />
-            design.
-          </StyledH2Reverse>
-        </StyledH2ContainerReverse>
+        <StyledH2ContainerAlignRight>
+          <StyledH2AlignRight>
+            Intelligence <br /> by <br /> design.
+          </StyledH2AlignRight>
+        </StyledH2ContainerAlignRight>
       </StyledCopyReversed>
 
       <Case2 />
