@@ -4,6 +4,11 @@ import "react-multi-carousel/lib/styles.css";
 import Casefilm from "../assets/Grandiosa.mp4";
 import CaseImage from "../assets/placeholder.png";
 
+import Casefilm2 from "../assets/Beauty.mp4";
+import CaseImage2 from "../assets/polarbrod.png";
+
+
+
 const StyledCaseContainer = styled.div`
   width: 100%;
   min-width: 0%;
@@ -18,8 +23,10 @@ const StyledContentContainer = styled.div`
 
 const StyledCaseVideo = styled.video`
   position: relative;
-  width: 100%;
+  width: 200%;
   aspect-ratio: 16/9;
+  left: 50%;
+  transform: translateX(-50%);
   object-fit: cover;
   z-index: 1;
 `;
@@ -61,11 +68,11 @@ const StyledH4 = styled.h4`
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 2,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 2,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -103,6 +110,30 @@ const Case1carousel = () => {
             </StyledH4>
           </StyledInfoContainer>
         </StyledContentContainer>
+
+        <StyledContentContainer>
+          <StyledImg src={CaseImage2} alt="A commercial for Grandiosa" />
+          <StyledInfoContainer>
+            <StyledH4>Smart solutions, seamless integration.</StyledH4>
+          </StyledInfoContainer>
+        </StyledContentContainer>
+
+        <StyledContentContainer>
+          <StyledCaseVideo
+            src={Casefilm2}
+            autoPlay
+            loop
+            muted
+            playsInline
+            alt="A commercial for Grandiosa"
+          />
+          <StyledInfoContainer>
+            <StyledH4>
+              Full service production from Sweden to South Africa.
+            </StyledH4>
+          </StyledInfoContainer>
+        </StyledContentContainer>
+
       </Carousel>
     </StyledCaseContainer>
   );
