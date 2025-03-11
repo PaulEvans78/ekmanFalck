@@ -37,6 +37,11 @@ const StyledNav = styled.nav`
 const StyledEFLogo = styled.img`
   width: 51px;
   height: 63px;
+  margin-left: 12px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0em;
+  }
 `;
 
 const Navbar = () => {

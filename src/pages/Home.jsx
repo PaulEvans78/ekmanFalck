@@ -119,6 +119,7 @@ const StyledCopyReversed = styled.div`
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     display: none;
@@ -129,7 +130,7 @@ const StyledTextContainerAlignRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 40%;
   color: #2d2d2d;
   padding-left: 4em;
 `;
