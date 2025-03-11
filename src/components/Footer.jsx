@@ -98,8 +98,6 @@ const StyledContact = styled.div`
 
   @media screen and (max-width: 767px) {
     align-self: flex-end;
-    padding-left: 0em;
-    padding-right: 0em;
     margin-top: 2em;
   }
 `;

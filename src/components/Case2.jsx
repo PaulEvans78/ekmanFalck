@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Casefilm from "../assets/Grandiosa.mp4";
+import Casefilm from "../assets/creativeShowreel.mp4";
 
 const StyledCaseContainer = styled.div`
   position: relative;

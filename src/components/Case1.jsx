@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import Casefilm from "../assets/Grandiosa.mp4";
-import CaseImage from "../assets/placeholder.png";
+import Casefilm from "../assets/lawnman.mp4";
+import Casefilmtemp from "../assets/beauty.mp4";
+// import CaseImage from "../assets/placeholder.png";
 
 const StyledCaseContainer = styled.div`
   width: 100%;
@@ -11,11 +12,13 @@ const StyledCaseContainer = styled.div`
 const StyledGridContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 4px;
   width: 100%;
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
+    gap: 4px;
   }
 `;
 
@@ -27,18 +30,20 @@ const StyledContentContainer = styled.div`
 
 const StyledCaseVideo = styled.video`
   position: relative;
+  display: flex;
+  justify-self: center;
   width: 200%;
   aspect-ratio: 16/9;
   object-fit: cover;
   z-index: 1;
 `;
 
-const StyledImg = styled.img`
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/4;
-  z-index: 1;
-`;
+// const StyledImg = styled.img`
+//   position: relative;
+//   width: 100%;
+//   aspect-ratio: 4/4;
+//   z-index: 1;
+// `;
 
 const StyledInfoContainer = styled.div`
   position: absolute;
@@ -72,7 +77,14 @@ const Case1 = () => {
     <StyledCaseContainer>
       <StyledGridContainer>
         <StyledContentContainer>
-          <StyledImg src={CaseImage} alt="A commercial for Grandiosa" />
+          <StyledCaseVideo
+            src={Casefilmtemp}
+            autoPlay
+            loop
+            muted
+            playsInline
+            alt="A commercial for Grandiosa"
+          />
 
           <StyledInfoContainer>
             <StyledH4>Smart solutions, seamless integration.</StyledH4>

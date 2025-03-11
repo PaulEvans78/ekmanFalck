@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Herofilm from "../assets/Grandiosa.mp4";
+import Herofilm from "../assets/showreel.mp4";
 import ArrowIcon from "../assets/arrow.png";
 
 const StyledHeroContainer = styled.div`
@@ -74,7 +74,7 @@ const StyledInfoContainer = styled.div`
   max-width: 100%;
   height: 100%;
   color: var(--main-font-color);
-  padding: 24px;
+  padding: 24px 24px 24px 20em;
 
   @media screen and (max-width: 1500px) {
     padding-bottom: 0;
@@ -85,6 +85,7 @@ const StyledInfoContainer = styled.div`
     align-items: flex-start;
     justify-self: flex-start;
     margin-top: 6em;
+    padding: 24px;
   }
 
   @media screen and (max-width: 960px) {
@@ -96,6 +97,8 @@ const StyledContainer = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 4em;
+
 
   @media screen and (max-width: 1280px) {
     width: 70%;
@@ -106,34 +109,34 @@ const StyledContainer = styled.div`
   }
 `;
 
-const StyledSubHeading = styled.p`
-  font-family: "helvetica Neue", sans-serif;
-  font-size: 50px;
-  line-height: 57px;
-  letter-spacing: -2%;
-  font-weight: bold;
-  margin: 0;
-  align-self: flex-start;
+// const StyledSubHeading = styled.p`
+//   font-family: "helvetica Neue", sans-serif;
+//   font-size: 50px;
+//   line-height: 57px;
+//   letter-spacing: -2%;
+//   font-weight: bold;
+//   margin: 0;
+//   align-self: flex-start;
 
-  @media screen and (max-width: 1500px) {
-    font-size: 32px;
-  }
+//   @media screen and (max-width: 1500px) {
+//     font-size: 32px;
+//   }
 
-  @media screen and (max-width: 1280px) {
-    font-size: 50px;
-  }
+//   @media screen and (max-width: 1280px) {
+//     font-size: 50px;
+//   }
 
-  @media screen and (max-width: 767px) {
-    font-size: 28px;
-  }
+//   @media screen and (max-width: 767px) {
+//     font-size: 28px;
+//   }
 
-  @media screen and (max-width: 390px) {
-    font-size: 20px;
-  }
-`;
+//   @media screen and (max-width: 390px) {
+//     font-size: 20px;
+//   }
+// `;
 
 const StyledHeroDigest = styled.p`
-  width: 78%;
+  width: 90%;
   font-family: "helvetica Neue", sans-serif;
   font-size: 25px;
   line-height: 25px;
@@ -226,16 +229,16 @@ const Hero = () => {
 
         <StyledInfoContainer>
           <StyledContainer>
-            <StyledSubHeading>Engineering possibilities </StyledSubHeading>
+            {/* <StyledSubHeading>Engineering possibilities </StyledSubHeading> */}
             <StyledHeroDigest>
-              Grounded in the traditions of filmmaking and story telling, we
-              merge artistry with technology to craft meaningful experiences.
+            Grounded in the traditions of filmmaking, we merge artistry with technology to craft meaningful experiences 
+            where traditional storytelling meets next-generation tools.
             </StyledHeroDigest>
 
             <a href="mailto:hello@ekmanfalck.se">
               <StyledButton>
                 <StyledMailLink>
-                  Start Today
+                  Say hello
                   <StyledIcon>
                     <StyledImg src={ArrowIcon} alt="A arrow icon for next" />
                   </StyledIcon>
