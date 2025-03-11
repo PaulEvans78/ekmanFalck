@@ -58,6 +58,7 @@ const StyledH2Container = styled.div`
 
   @media screen and (max-width: 960px) {
     padding-left: 24px;
+    padding-bottom: 24px;
   }
 
   @media screen and (max-width: 390px) {
@@ -141,7 +142,7 @@ const StyledTextAlignRight = styled.p`
 
 const StyledH2ContainerAlignRight = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   text-align: right;
   width: 50%;
